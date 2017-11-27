@@ -53,3 +53,18 @@
   letter-spacing: 0.25vh;
   /* 2.3px */
   color: #6e6e6e; }
+  .navbar > * {
+    text-decoration: none;
+    color: #6e6e6e; }
+    .navbar > *.active {
+      text-decoration: underline; }
+
+.mobile-blocker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #5c5c5c;
+  z-index: 100;
+  font-size: 25px; }

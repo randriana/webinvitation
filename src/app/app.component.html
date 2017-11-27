@@ -1,3 +1,6 @@
+<div *ngIf="doBlock" class="mobile-blocker">
+    <span>Please open this on a bigger screen</span>
+</div>
 <div class="pre-whitespace"></div>
     <div class="envelope__container envelope__container--backside">
             <img class="envelope__backside"src="../assets/Envelope_backside.svg" alt="envelope">
@@ -5,11 +8,11 @@
     <div class="scroll-component-container">
         <div class="paper">
             <div class="navbar">
-              <a routerLink="/">ACCUEIL</a>
-              <a routerLink="/history">HISTOIRE</a>
-              <a routerLink="/marriage">MARIAGE</a>
-              <a routerLink="/logistics">LOGISTIQUE</a>
-              <a routerLink="/rsvp">RSVP</a>
+              <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ACCUEIL</a>
+              <a routerLink="/history" routerLinkActive="active">HISTOIRE</a>
+              <a routerLink="/marriage" routerLinkActive="active">MARIAGE</a>
+              <a routerLink="/logistics" routerLinkActive="active">LOGISTIQUE</a>
+              <a routerLink="/rsvp" routerLinkActive="active">RSVP</a>
             </div>
             <router-outlet></router-outlet>
         </div>
