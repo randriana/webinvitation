@@ -16,10 +16,10 @@ export class AppComponent implements OnInit {
       this.doBlock = true;
     }
 
-    this.doRunMobileBlocker();
+    this._doRunMobileBlocker();
   }
 
-  doRunMobileBlocker(): void {
+  _doRunMobileBlocker(): void {
     window.onresize = () => {
       if ( window.innerWidth < this.minViewportSize ) {
         this.doBlock = true;
