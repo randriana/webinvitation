@@ -1,0 +1,31 @@
+<div class="pre-whitespace"></div>
+<div class="envelope__container envelope__container--backside">
+        <img class="envelope__backside"src="assets/Envelope_backside.svg" alt="envelope">
+    </div>
+<div class="scroll-component-container">
+    <div class="paper">
+      <div class="navbar">
+        <span *ngFor="let view of views" (click)="selectView(view.id)" [class.active]="activeView === view.id"> {{view.text}}</span>
+      </div>
+      <main *ngIf="activeView === 'home'">
+        <h1 class="headline">l’amour au delà des frontières</h1>
+        <span class="name">Rina & Fitia</span>
+        <span class="post-name">et leurs parents</span>
+      </main>
+      <main *ngIf="activeView === 'history'">
+        <h1 class="headline">histoire</h1>
+      </main>
+      <main *ngIf="activeView === 'marriage'">
+        <h1 class="headline">mariage</h1>
+      </main>
+      <main *ngIf="activeView === 'logistics'">
+        <h1 class="headline">logistique</h1>
+      </main>
+      <main *ngIf="activeView === 'rsvp'">
+        <h1 class="headline">rsvp</h1>
+      </main>
+  </div>
+</div>
+<div class="envelope__container envelope__container--frontside">
+    <img class="envelope__frontside"src="assets/Envelope_frontside.svg" alt="envelope">
+</div>

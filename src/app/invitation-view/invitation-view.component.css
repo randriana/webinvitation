@@ -1,0 +1,95 @@
+.pre-whitespace {
+  width: 100%;
+  height: 67vh; }
+
+.scroll-component-container {
+  width: 100%;
+  height: 800px;
+  z-index: 0; }
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 3.5vh 5vh 0;
+  font-size: 1.3vh;
+  /* 12px */
+  font-family: Cochin;
+  font-weight: 100;
+  letter-spacing: 0.25vh;
+  /* 2.3px */
+  color: #6e6e6e; }
+  .navbar > * {
+    cursor: pointer; }
+  .navbar .active {
+    text-decoration: underline; }
+
+main {
+  -webkit-transition: opacity 0.75s ease-in;
+  transition: opacity 0.75s ease-in; }
+  main.show {
+    opacity: 1; }
+  main.hide {
+    opacity: 0; }
+
+.paper {
+  -webkit-box-shadow: 0px 0px 10px #979797;
+  box-shadow: 0px 0px 10px #979797;
+  background-color: #fff;
+  max-width: 63vh;
+  min-height: 100%;
+  display: block;
+  margin: 0 auto; }
+
+.headline {
+  font-family: cochin;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-top: 180px;
+  text-align: center;
+  color: #3a3a3a; }
+
+.name {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 10px;
+  font-weight: 100;
+  font-family: "Snell Roundhand";
+  color: #3a3a3a;
+  margin-top: 30px; }
+
+.post-name {
+  display: block;
+  font-family: Cochin;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: #3a3a3a;
+  font-weight: 100; }
+
+.envelope__container {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  .envelope__container--backside {
+    bottom: 13vh;
+    z-index: -1;
+    height: 49vh; }
+  .envelope__container--frontside {
+    bottom: -11vh;
+    z-index: 1;
+    height: 47vh; }
+
+.envelope__frontside {
+  max-width: 650px;
+  height: 100%; }
+
+.envelope__backside {
+  max-width: 635px;
+  height: 100%; }

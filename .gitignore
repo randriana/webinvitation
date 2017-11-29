@@ -4,6 +4,8 @@
 /dist
 /tmp
 /out-tsc
+/public/*
+/public
 
 # dependencies
 /node_modules
@@ -40,3 +42,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+public/*.bundle.js

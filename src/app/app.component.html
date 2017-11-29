@@ -1,22 +1,4 @@
 <div *ngIf="doBlock" class="mobile-blocker">
     <span>Please open this on a bigger screen</span>
 </div>
-<div class="pre-whitespace"></div>
-    <div class="envelope__container envelope__container--backside">
-            <img class="envelope__backside"src="../assets/Envelope_backside.svg" alt="envelope">
-        </div>
-    <div class="scroll-component-container">
-        <div class="paper">
-            <div class="navbar">
-              <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ACCUEIL</a>
-              <a routerLink="/history" routerLinkActive="active">HISTOIRE</a>
-              <a routerLink="/marriage" routerLinkActive="active">MARIAGE</a>
-              <a routerLink="/logistics" routerLinkActive="active">LOGISTIQUE</a>
-              <a routerLink="/rsvp" routerLinkActive="active">RSVP</a>
-            </div>
-            <router-outlet></router-outlet>
-        </div>
-    </div>
-    <div class="envelope__container envelope__container--frontside">
-        <img class="envelope__frontside"src="../assets/Envelope_frontside.svg" alt="envelope">
-    </div>
+<router-outlet></router-outlet>
