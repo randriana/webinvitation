@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 
 import { AuthGuardService } from './auth-guard.service';
+import { AuthService } from './auth.service';
+
+
 import { LoginComponent } from './login/login.component';
 import { InvitationViewComponent } from './invitation-view/invitation-view.component';
 
@@ -19,7 +22,7 @@ import { InvitationViewComponent } from './invitation-view/invitation-view.compo
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [AuthGuardService],
+  providers: [AuthGuardService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
