@@ -25,10 +25,11 @@ export class LoginComponent implements OnInit {
   login() {
     this.message = 'Trying to log in ...';
  
-    this.authService.login().subscribe(() => {
+    this.authService.login().then(( ) => {
       this.setMessage();
+      
       if (this.authService.isLoggedIn) {
-        let redirect = this.authService.redirectUrl ? this.authService.redirectUrl : '/home';
+        let redirect = this.authService.redirectUrl ? this.authService.redirectUrl : '/invitation';
  
         this.router.navigate([redirect]);
       }
