@@ -8,7 +8,8 @@ var Schema = mongoose.Schema;
 var FamilySchema = new Schema({
   name: String,
   members: [],
-  passcode: String
+  passcode: String,
+  answered: Boolean
 });
 
 module.exports = mongoose.model('Family', FamilySchema);

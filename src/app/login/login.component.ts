@@ -11,33 +11,19 @@ export class LoginComponent implements OnInit {
 
   message: string;
   
-  constructor(public userService: UserService, public router: Router) {
-    this.setMessage();
-  }
+  constructor(public userService: UserService, public router: Router) {}
 
   ngOnInit() {
   }
 
-  setMessage() {
-    this.message = 'Logged ' + (this.userService.loggedInUser ? 'in' : 'out');
-  }
-
-  login() {
-    this.message = 'Trying to log in ...';
- 
-    this.userService.login().then(( ) => {
-      this.setMessage();
-      
-      if (this.userService.loggedInUser) {
+  login():void {
+    this.userService.login().subscribe((user) => {
+      if (user) {
+        this.userService.loggedInUser = user;
         let redirect = this.userService.redirectUrl ? this.userService.redirectUrl : '/invitation';
- 
         this.router.navigate([redirect]);
       }
     });
   }
 
-  logout() {
-    this.userService.logout();
-    this.setMessage();
-  }
 }

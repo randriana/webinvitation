@@ -22,7 +22,23 @@
         <h1 class="headline">logistique</h1>
       </main>
       <main *ngIf="activeView === 'rsvp'">
-        <h1 class="headline">rsvp</h1>
+        <h1>{{user.name}}</h1>
+        <div *ngIf="!user.answered">
+            <form (ngSubmit)="onSubmit()" #rsvpForm="ngForm">
+                <ul>
+                  <li *ngFor="let member of user.members"><label [for]="member.name">{{member.name}}</label><input type="checkbox" [(ngModel)]="member.attending" [id]="member.name" name="attending"></li>
+                </ul>
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+        <div *ngIf="user.answered">
+          <h1>You´ve already answered</h1>
+          <p>Attending:</p>
+          <ul>
+              <!-- TODO!! Refactor to filter -->
+              <li *ngFor="let member of user.members">{{member.name}}</li>
+          </ul>
+        </div>        
       </main>
   </div>
 </div>

@@ -9,13 +9,35 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:passcode', function(req, res, next) {
-  Family.find({ passcode: req.params.passcode }, function(err, fam) {
+  Family.findOne({ passcode: req.params.passcode }, function(err, fam) {
     if(err) {
       res.send(err);
-    } else if(fam.length > 0) {
-      res.send(fam[0].name);
+    } else if(!fam) {
+      res.send('Not found');
     } else {
-      res.send('not found');
+      res.send(fam);
+    }
+  });
+});
+
+router.put('/submitAnswer', function(req, res, next) {
+  var family = req.body;
+  Family.findOne({ passcode: family.passcode }, function(err, fam) {
+    if(err) {
+      res.send(err);
+    } else if(!fam) {
+      res.send('Not found');
+    } else {
+      family.answered = true;
+      fam.set(family);
+
+      fam.save(function(err, updatedFam){
+        if(err) {
+          res.send(err);
+        } else {
+          res.send(updatedFam);
+        }
+      });
     }
   });
 });
@@ -23,19 +45,22 @@ router.get('/:passcode', function(req, res, next) {
 router.post('/post', function(req, res, next) {
   var newFamily = new Family(
     {
-      name: 'Testesen',
+      name: 'Andriana',
+      answered: false,
       members: [
-        { name: 'Test', attending: false, answered: false},
-        { name: 'Kari', attending: false, answered: false},
-        { name: 'Ola', attending: false, answered: false}],
-      passcode: 'TOKRF'
+        { name: 'Mamy', attending: false},
+        { name: 'Lova', attending: false},
+        { name: 'Rina', attending: false},
+        { name: 'Fitia', attending: false},
+        { name: 'Ainiray', attending: false}],
+      passcode: 'MLRFA'
     })
 
-    newFamily.save(function (err) {
+    newFamily.save(function (err, newFam) {
       if (err) {
-        res.send('err', err);
+        res.send(err);
       } else {
-        res.send('cool');
+        res.send(newFam);
       }
     });
 });

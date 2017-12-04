@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+
+import { Family }    from '../family';
 import { VIEWS } from '../views';
+import { View } from '../views';
+
+import { UserService } from '../user.service';
+
 
 @Component({
   selector: 'app-invitation-view',
@@ -8,10 +14,14 @@ import { VIEWS } from '../views';
 })
 export class InvitationViewComponent implements OnInit {
 
-  public views: object[] = VIEWS;
-  public activeView: string = 'home';
-  
-  constructor() { 
+  public views: View[];
+  public activeView: string;
+  public user: Family;
+
+  constructor(public userService: UserService) {
+    this.user = userService.loggedInUser;
+    this.activeView = 'home';
+    this.views = VIEWS;
   }
 
   ngOnInit() {
@@ -19,6 +29,11 @@ export class InvitationViewComponent implements OnInit {
 
   selectView(id: string): void {
     this.activeView = id;
+  }
+
+  onSubmit() {
+    this.user.answered = true;
+    this.userService.submitAnswer();
   }
 
 
