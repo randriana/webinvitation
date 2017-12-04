@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-const VIEWS: object[] = [
-  { id: 'home', text: 'ACCUEIL'},
-  { id: 'history', text: 'HISTOIRE' }, 
-  { id: 'marriage', text: 'MARIAGE' },
-  { id: 'logistics', text: 'LOGISTIQUE' },
-  { id: 'rsvp', text: 'RSVP' }
-];
+import { VIEWS } from '../views';
 
 @Component({
   selector: 'app-invitation-view',
@@ -15,11 +8,9 @@ const VIEWS: object[] = [
 })
 export class InvitationViewComponent implements OnInit {
 
-
   public views: object[] = VIEWS;
   public activeView: string = 'home';
-
-
+  
   constructor() { 
   }
 

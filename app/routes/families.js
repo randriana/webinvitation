@@ -8,8 +8,7 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-router.get('/test/:passcode', function(req, res, next) {
-
+router.get('/:passcode', function(req, res, next) {
   Family.find({ passcode: req.params.passcode }, function(err, fam) {
     if(err) {
       res.send(err);
@@ -18,12 +17,10 @@ router.get('/test/:passcode', function(req, res, next) {
     } else {
       res.send('not found');
     }
-    
   });
-  
 });
 
-router.post('/test', function(req, res, next) {
+router.post('/post', function(req, res, next) {
   var newFamily = new Family(
     {
       name: 'Testesen',

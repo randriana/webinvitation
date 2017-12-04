@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router }      from '@angular/router';
-import { AuthService } from '../auth.service';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   message: string;
   
-  constructor(public authService: AuthService, public router: Router) {
+  constructor(public userService: UserService, public router: Router) {
     this.setMessage();
   }
 
@@ -19,17 +19,17 @@ export class LoginComponent implements OnInit {
   }
 
   setMessage() {
-    this.message = 'Logged ' + (this.authService.isLoggedIn ? 'in' : 'out');
+    this.message = 'Logged ' + (this.userService.loggedInUser ? 'in' : 'out');
   }
 
   login() {
     this.message = 'Trying to log in ...';
  
-    this.authService.login().then(( ) => {
+    this.userService.login().then(( ) => {
       this.setMessage();
       
-      if (this.authService.isLoggedIn) {
-        let redirect = this.authService.redirectUrl ? this.authService.redirectUrl : '/invitation';
+      if (this.userService.loggedInUser) {
+        let redirect = this.userService.redirectUrl ? this.userService.redirectUrl : '/invitation';
  
         this.router.navigate([redirect]);
       }
@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
   }
 
   logout() {
-    this.authService.logout();
+    this.userService.logout();
     this.setMessage();
   }
 }
