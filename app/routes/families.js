@@ -13,7 +13,7 @@ router.get('/:passcode', function(req, res, next) {
     if(err) {
       res.send(err);
     } else if(!fam) {
-      res.send('Not found');
+      res.status(404).send('User not found');
     } else {
       res.send(fam);
     }
@@ -26,7 +26,7 @@ router.put('/submitAnswer', function(req, res, next) {
     if(err) {
       res.send(err);
     } else if(!fam) {
-      res.send('Not found');
+      res.status(404).send('User not found');
     } else {
       family.answered = true;
       fam.set(family);

@@ -25,23 +25,18 @@ export class UserService {
     this.loggedInUser = null;
   }
 
-  getFamilyByPasscode (): Observable<Family> {
-    let url = `${this.url}MLRFA`;
+  getFamilyByPasscode(passcode: string): Observable<Family> {
+    let url = `${this.url}${passcode}`;
     return this.http.get<Family>(url);
   }
 
   submitAnswer() {
-    console.log(this.loggedInUser)
+    let url = `${this.url}/submitAnswer`;
+    return this.http.put(url, this.loggedInUser);
   }
 
-  login(): Observable<Family> {
-    let memberList: string[] = ['Mami', 'Lova', 'Rina', 'Fitia', 'Ainiray'];
-    let members: Member[] = [];
-
-    memberList.forEach( (name) => members.push(new Member(name, false)));
-    let family = new Family('Andriana', false, 'MLRFA', members);
-    this.loggedInUser = family;
-    return this.getFamilyByPasscode();
+  login(passcode: string): Observable<Family> {
+    return this.getFamilyByPasscode(passcode.toLocaleUpperCase());
   }
 
   logout(): void {

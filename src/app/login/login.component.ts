@@ -9,7 +9,8 @@ import { UserService } from '../user.service';
 })
 export class LoginComponent implements OnInit {
 
-  message: string;
+  passcode: string = "";
+  error: string = "";
   
   constructor(public userService: UserService, public router: Router) {}
 
@@ -17,13 +18,14 @@ export class LoginComponent implements OnInit {
   }
 
   login():void {
-    this.userService.login().subscribe((user) => {
+    this.userService.login(this.passcode).subscribe((user) => {
       if (user) {
         this.userService.loggedInUser = user;
         let redirect = this.userService.redirectUrl ? this.userService.redirectUrl : '/invitation';
         this.router.navigate([redirect]);
       }
-    });
+    },
+    error => this.error = error.error);
   }
 
 }

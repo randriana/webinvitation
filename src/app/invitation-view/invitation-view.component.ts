@@ -33,7 +33,7 @@ export class InvitationViewComponent implements OnInit {
 
   onSubmit() {
     this.user.answered = true;
-    this.userService.submitAnswer();
+    this.userService.submitAnswer().subscribe();
   }
 
 
