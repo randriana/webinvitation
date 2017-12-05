@@ -6,10 +6,11 @@ var Schema = mongoose.Schema;
  */
 
 var FamilySchema = new Schema({
-  name: String,
+  name: {type: String, default: ""},
   members: [],
-  passcode: String,
-  answered: Boolean
+  passcode: {type: String, default: ""},
+  answered: {type: Boolean, default: false},
+  knownMembers: {type: Boolean, default: true}
 });
 
 module.exports = mongoose.model('Family', FamilySchema);

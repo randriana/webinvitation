@@ -3,7 +3,8 @@ export class Family {
         public name: string,
         public answered: boolean,
         public passcode: string,
-        public members: Member[]
+        public members: Member[],
+        public knownMembers: boolean
     ) { }
 }
 

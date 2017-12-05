@@ -43,19 +43,8 @@ router.put('/submitAnswer', function(req, res, next) {
 });
 
 router.post('/post', function(req, res, next) {
-  var newFamily = new Family(
-    {
-      name: 'Andriana',
-      answered: false,
-      members: [
-        { name: 'Mamy', attending: false},
-        { name: 'Lova', attending: false},
-        { name: 'Rina', attending: false},
-        { name: 'Fitia', attending: false},
-        { name: 'Ainiray', attending: false}],
-      passcode: 'MLRFA'
-    })
-
+  var newFamily = new Family(req.body)
+  
     newFamily.save(function (err, newFam) {
       if (err) {
         res.send(err);

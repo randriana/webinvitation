@@ -24,19 +24,28 @@
       <main *ngIf="activeView === 'rsvp'">
         <h1>{{user.name}}</h1>
         <div *ngIf="!user.answered">
-            <form (ngSubmit)="onSubmit()" #rsvpForm="ngForm">
+          <div *ngIf="user.knownMembers">
+              <form (ngSubmit)="onSubmit()" #rsvpForm="ngForm">
                 <ul>
                   <li *ngFor="let member of user.members"><label [for]="member.name">{{member.name}}</label><input type="checkbox" [(ngModel)]="member.attending" [id]="member.name" name="member_{{member.name}}">{{member.attending}}</li>
                 </ul>
                 <button type="submit">Submit</button>
               </form>
+          </div>
+          <div *ngIf="!user.knownMembers">
+              <form (ngSubmit)="onSubmitUnknown()" #rsvpForm="ngForm">
+                <ul>
+                  <li *ngFor="let member of user.members"><input type="text" [(ngModel)]="member.name" [id]="member.name" name="member_{{member.name}}">{{member.name}}</li>
+                </ul>
+                <button type="submit">Submit</button>
+              </form>
+          </div>
         </div>
         <div *ngIf="user.answered">
-          <h1>You´ve already answered</h1>
+          <h1>Thank you for your answer</h1>
           <p>Attending:</p>
           <ul>
-              <!-- TODO!! Refactor to filter -->
-              <li *ngFor="let member of user.members">{{member.name}}</li>
+              <li *ngFor="let member of (user.members | attending)">{{member.name}}</li>
           </ul>
         </div>        
       </main>

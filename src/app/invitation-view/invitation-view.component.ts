@@ -36,5 +36,11 @@ export class InvitationViewComponent implements OnInit {
     this.userService.submitAnswer().subscribe();
   }
 
+  onSubmitUnknown() {
+    this.user.answered = true;
+    this.user.members.forEach( member => member.attending = member.name ? true : false);
+    this.userService.submitAnswer().subscribe();
+  }
+
 
 }

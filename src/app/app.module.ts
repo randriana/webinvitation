@@ -12,13 +12,15 @@ import { UserService } from './user.service';
 
 import { LoginComponent } from './login/login.component';
 import { InvitationViewComponent } from './invitation-view/invitation-view.component';
+import { AttendingPipe } from './attending.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    InvitationViewComponent
+    InvitationViewComponent,
+    AttendingPipe
   ],
   imports: [
     BrowserModule,
