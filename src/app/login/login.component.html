@@ -1,6 +1,9 @@
 <div class="login-container">
-  <h1>Login</h1>
-    <input type="text" [(ngModel)]="passcode">
-    <button (click)="login()">Login</button>
-    <p>{{error}}</p>
+  <form class="form" (ngSubmit)="login()" #loginForm="ngForm">
+    <div class="form__content">
+        <p><input type="text" placeholder="Enter passcode" [(ngModel)]="passcode" name="passcode"></p>  
+        <button type="submit">Login</button>
+        <p class="error-code">{{error}}</p>
+    </div>
+  </form>
 </div>

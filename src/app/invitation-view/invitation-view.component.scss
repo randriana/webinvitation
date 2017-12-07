@@ -1,5 +1,5 @@
 $paper-height: 800px;
-$paper-width: 63vh;
+$paper-width: 66vh;
 
 .pre-whitespace {
     width: 100%;
@@ -16,7 +16,7 @@ $paper-width: 63vh;
     display: flex;
     justify-content: space-between;
     padding: 3.5vh 5vh 0;
-    font-size: 1.3vh; /* 12px */
+    font-size: 1.4vh; /* 12px */
     font-family: Cochin;
     font-weight: 100;
     letter-spacing: 0.25vh; /* 2.3px */
@@ -103,11 +103,11 @@ main {
     }
 
     &__frontside {
-        max-width: 650px;
+        //width: 650px;
         height: 100%;
     }
     &__backside {
-        max-width: 635px;
+        //width: 635px;
         height: 100%;
     }
 }
