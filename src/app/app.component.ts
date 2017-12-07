@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   doBlock = false;
-  minViewportSize = 650;
+  minViewportSize = 675;
 
   ngOnInit() {
     let viewportWidth = window.innerWidth;
