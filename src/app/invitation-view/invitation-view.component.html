@@ -27,7 +27,7 @@
           <div *ngIf="user.knownMembers">
               <form (ngSubmit)="onSubmit()" #rsvpForm="ngForm">
                 <ul>
-                  <li *ngFor="let member of user.members"><label [for]="member.name">{{member.name}}</label><input type="checkbox" [(ngModel)]="member.attending" [id]="member.name" name="member_{{member.name}}">{{member.attending}}</li>
+                  <li *ngFor="let member of user.members"><label [for]="member.name">{{member.name}}</label><input type="checkbox" [(ngModel)]="member.attending" [id]="member.name" name="member_{{member.name}}"></li>
                 </ul>
                 <button type="submit">Submit</button>
               </form>

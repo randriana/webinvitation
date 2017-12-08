@@ -1,6 +1,7 @@
 .login-container {
   display: block;
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   height: 100%;
@@ -24,11 +25,12 @@ button, input {
 .form {
   display: block;
   margin: 0 auto;
-  width: 300px;
-  height: 250px;
-  border: 1.5px solid white;
+  width: 350px;
+  height: 415px;
   position: relative;
-  top: 25vh;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   border-radius: 3px; }
   .form__content {
     display: block;
@@ -38,3 +40,8 @@ button, input {
 .error-code {
   font-size: 20px;
   color: #ff8e8e; }
+
+.logo {
+  display: block;
+  margin: 0 auto 30px;
+  width: 170px; }

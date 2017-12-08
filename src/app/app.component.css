@@ -4,6 +4,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #5c5c5c;
   z-index: 100;
-  font-size: 25px; }
+  font-size: 25px;
+  background: #ECE9E6;
+  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#ECE9E6));
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); }

@@ -1,7 +1,5 @@
 @mixin piglet {
-    background: #ee9ca7;
-    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7); 
-    background: linear-gradient(to right, #ffdde1, #ee9ca7);     
+    background: #ffdde1;  
 }
 
 @mixin blue{
@@ -20,6 +18,7 @@
 .login-container {
     display: block;
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     left: 0;
     height: 100%;
@@ -49,11 +48,11 @@ button, input {
 .form {
     display: block;
     margin: 0 auto ;
-    width: 300px;
-    height: 250px;
-    border: 1.5px solid rgb(255, 255, 255);
+    width: 350px;
+    height: 415px;
     position: relative;
-    top: 25vh;
+    top: 50%;
+    transform: translateY(-50%);
     border-radius: 3px;
 
     &__content {
@@ -66,4 +65,10 @@ button, input {
 .error-code {
     font-size: 20px;
     color: rgb(255, 142, 142);
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 30px;
+    width: 170px;
 }
