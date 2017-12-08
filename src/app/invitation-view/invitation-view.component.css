@@ -7,6 +7,24 @@
   height: 800px;
   z-index: 0; }
 
+.main__paragraph {
+  font-family: cochin;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #3a3a3a;
+  margin-top: 50px; }
+
+.main__date-paragraph {
+  font-family: "Snell Roundhand";
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #3a3a3a;
+  margin-top: 50px; }
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +48,8 @@
 main {
   -webkit-transition: opacity 0.75s ease-in;
   transition: opacity 0.75s ease-in; }
+  main#home {
+    height: 500px; }
   main.show {
     opacity: 1; }
   main.hide {
@@ -49,7 +69,7 @@ main {
   font-weight: 100;
   font-size: 20px;
   letter-spacing: 4px;
-  margin-top: 180px;
+  margin-top: 100px;
   text-align: center;
   color: #3a3a3a; }
 
@@ -64,13 +84,27 @@ main {
   margin-top: 30px; }
 
 .post-name {
+  margin-top: 10px;
   display: block;
   font-family: Cochin;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 4px;
   color: #3a3a3a;
   font-weight: 100; }
+
+.parent-container {
+  font-family: Cochin;
+  padding: 0 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-size: 16px;
+  letter-spacing: 2px; }
 
 .envelope__container {
   position: fixed;
