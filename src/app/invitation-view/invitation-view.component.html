@@ -11,44 +11,6 @@
         <a routerLink="logistics" routerLinkActive="active">LOGISTIQUE</a>
         <a routerLink="rsvp" routerLinkActive="active">RSVP</a>
       </div>
-      <!--
-      <main *ngIf="activeView === 'history'">
-        <h1 class="headline">histoire</h1>
-      </main>
-      <main *ngIf="activeView === 'marriage'">
-        <h1 class="headline">mariage</h1>
-      </main>
-      <main *ngIf="activeView === 'logistics'">
-        <h1 class="headline">logistique</h1>
-      </main>
-      <main *ngIf="activeView === 'rsvp'">
-        <h1>{{user.name}}</h1>
-        <div *ngIf="!user.answered">
-          <div *ngIf="user.knownMembers">
-              <form (ngSubmit)="onSubmit()" #rsvpForm="ngForm">
-                <ul>
-                  <li *ngFor="let member of user.members"><label [for]="member.name">{{member.name}}</label><input type="checkbox" [(ngModel)]="member.attending" [id]="member.name" name="member_{{member.name}}"></li>
-                </ul>
-                <button type="submit">Submit</button>
-              </form>
-          </div>
-          <div *ngIf="!user.knownMembers">
-              <form (ngSubmit)="onSubmitUnknown()" #rsvpForm="ngForm">
-                <ul>
-                  <li *ngFor="let member of user.members"><input type="text" [(ngModel)]="member.name" [id]="member.name" name="member_{{member.name}}">{{member.name}}</li>
-                </ul>
-                <button type="submit">Submit</button>
-              </form>
-          </div>
-        </div>
-        <div *ngIf="user.answered">
-          <h1>Thank you for your answer</h1>
-          <p>Attending:</p>
-          <ul>
-              <li *ngFor="let member of (user.members | attending)">{{member.name}}</li>
-          </ul>
-        </div>
-      </main>-->
       <router-outlet></router-outlet>
   </div>
 </div>

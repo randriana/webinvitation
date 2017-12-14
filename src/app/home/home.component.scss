@@ -1,22 +1,50 @@
+.logo {
+  &__container {
+    display: block;
+    position: relative;
+    height: 200px;
+  }
+  &__image {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &--text-overlay {
+    font-size: 16px;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    font-family: Didot;
+    letter-spacing: 2px;
+    color: #C0C0C0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .main {
   &__paragraph {
-    font-family: cochin;
+    font-family: Didot;
     font-weight: 100;
-    font-size: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-size: 16px;
     text-align: center;
-    color: #3a3a3a;
+    color: #090909;
     margin-top: 50px;
   }
 
   &__date-paragraph {
-    font-family: "Snell Roundhand";
-    font-weight: 100;
-    font-size: 20px;
-    letter-spacing: 4px;
+    font-family: Didot;
+    font-weight: bold;
+    font-size: 16px;
     text-align: center;
-    color: #3a3a3a;
-    margin-top: 50px;
+    color: #090909;
+    margin-top: 20px;
+    letter-spacing: 2px;
   }
 }
 
@@ -24,33 +52,30 @@
   display: block;
   text-align: center;
   font-size: 50px;
-  letter-spacing: 10px;
   font-weight: 100;
   font-family: "Snell Roundhand";
   color: #3a3a3a;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
-.post-name {
-  margin-top: 10px;
+.pre-name {
   display: block;
-  font-family: Cochin;
+  font-family: Didot;
   text-align: center;
-  font-size: 25px;
-  letter-spacing: 4px;
-  color: #3a3a3a;
+  font-size: 16px;
+  color: #090909;
   font-weight: 100;
 }
 
 .parent-container {
-  font-family: Cochin;
-  padding: 0 20px;
+  font-family: Didot;
   text-align: center;
   display: flex;
-  margin-top: 50px;
-  justify-content: space-around;
+  margin: 20px auto 0;
+  justify-content: space-between;
   font-size: 16px;
   letter-spacing: 2px;
+  width: 65%;
 }
 
 .headline {
