@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Family }    from '../family';
-import { VIEWS } from '../views';
-import { View } from '../views';
+import { Family } from '../family';
 
 import { UserService } from '../user.service';
 
@@ -14,33 +12,12 @@ import { UserService } from '../user.service';
 })
 export class InvitationViewComponent implements OnInit {
 
-  public views: View[];
-  public activeView: string;
   public user: Family;
 
   constructor(public userService: UserService) {
     this.user = userService.loggedInUser;
-    this.activeView = 'home';
-    this.views = VIEWS;
   }
 
   ngOnInit() {
   }
-
-  selectView(id: string): void {
-    this.activeView = id;
-  }
-
-  onSubmit() {
-    this.user.answered = true;
-    this.userService.submitAnswer().subscribe();
-  }
-
-  onSubmitUnknown() {
-    this.user.answered = true;
-    this.user.members.forEach( member => member.attending = member.name ? true : false);
-    this.userService.submitAnswer().subscribe();
-  }
-
-
 }

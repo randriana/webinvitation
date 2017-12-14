@@ -5,19 +5,13 @@
 <div class="scroll-component-container">
     <div class="paper">
       <div class="navbar">
-        <span *ngFor="let view of views" (click)="selectView(view.id)" [class.active]="activeView === view.id"> {{view.text}}</span>
+        <a routerLink="home" routerLinkActive="active">ACCUEIL</a>
+        <a routerLink="history" routerLinkActive="active">HISTOIRE</a>
+        <a routerLink="marriage" routerLinkActive="active">MARIAGE</a>
+        <a routerLink="logistics" routerLinkActive="active">LOGISTIQUE</a>
+        <a routerLink="rsvp" routerLinkActive="active">RSVP</a>
       </div>
-      <main id="home" *ngIf="activeView === 'home'">
-        <h1 class="headline">l’amour au delà des frontières</h1>
-        <span class="name">Rina & Fitia</span>
-        <span class="post-name">avec leur parents</span>
-        <div class="parent-container">
-          <span id="mamy-lova">Mamy & Lova<br>ANDRIANAIVORAVELONA</span>
-          <span id="hery-nali">Hery & Nalisoa<br>RAKOTONDRATSIMBA</span>
-        </div>
-        <p class="main__paragraph">ont le plaisir de vous inviter à leur mariage</p>
-        <p class="main__date-paragraph">Le samedi 11 Aout 2018</p>
-      </main>
+      <!--
       <main *ngIf="activeView === 'history'">
         <h1 class="headline">histoire</h1>
       </main>
@@ -53,8 +47,9 @@
           <ul>
               <li *ngFor="let member of (user.members | attending)">{{member.name}}</li>
           </ul>
-        </div>        
-      </main>
+        </div>
+      </main>-->
+      <router-outlet></router-outlet>
   </div>
 </div>
 <div class="envelope__container envelope__container--frontside">

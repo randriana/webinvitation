@@ -9,19 +9,20 @@ import { UserService } from '../user.service';
 })
 export class LoginComponent implements OnInit {
 
-  passcode: string = "";
-  error: string = "";
-  
+  passcode = '';
+  error = '';
+
   constructor(public userService: UserService, public router: Router) {}
 
   ngOnInit() {
   }
 
-  login():void {
+  login(): void {
+    console.log(this.passcode)
     this.userService.login(this.passcode).subscribe((user) => {
       if (user) {
         this.userService.loggedInUser = user;
-        let redirect = this.userService.redirectUrl ? this.userService.redirectUrl : '/invitation';
+        const redirect = this.userService.redirectUrl ? this.userService.redirectUrl : '/invitation';
         this.router.navigate([redirect]);
       }
     },

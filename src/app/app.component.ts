@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   minViewportSize = 675;
 
   ngOnInit() {
-    let viewportWidth = window.innerWidth;
+    const viewportWidth = window.innerWidth;
 
     if ( viewportWidth < this.minViewportSize ) {
       this.doBlock = true;
@@ -26,6 +26,6 @@ export class AppComponent implements OnInit {
       } else {
         this.doBlock = false;
       }
-    }
+    };
   }
 }

@@ -1,0 +1,26 @@
+<h1>{{user.name}}</h1>
+<div *ngIf="!user.answered">
+  <div *ngIf="user.knownMembers">
+    <form (ngSubmit)="onSubmit()" #rsvpForm="ngForm">
+      <ul>
+        <li *ngFor="let member of user.members"><label [for]="member.name">{{member.name}}</label><input type="checkbox" [(ngModel)]="member.attending" [id]="member.name" name="member_{{member.name}}"></li>
+      </ul>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div *ngIf="!user.knownMembers">
+    <form (ngSubmit)="onSubmitUnknown()" #rsvpForm="ngForm">
+      <ul>
+        <li *ngFor="let member of user.members"><input type="text" [(ngModel)]="member.name" [id]="member.name" name="member_{{member.name}}">{{member.name}}</li>
+      </ul>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<div *ngIf="user.answered">
+  <h1>Thank you for your answer</h1>
+  <p>Attending:</p>
+  <ul>
+    <li *ngFor="let member of (user.members | attending)">{{member.name}}</li>
+  </ul>
+</div>
