@@ -15,12 +15,11 @@ $paper-width: 66vh;
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 3.5vh 5vh 0;
-    font-size: 1.4vh; /* 12px */
-    font-family: Cochin;
+    padding: 5vh 7vh 0;
+    font-size: 1.2vh;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     letter-spacing: 0.25vh; /* 2.3px */
-    color: #6e6e6e;
 
     > * {
         cursor: pointer;
@@ -28,7 +27,7 @@ $paper-width: 66vh;
         color: #6e6e6e;
 
       &.active {
-        text-decoration: underline;
+        color: #caa278;
       }
     }
 }
@@ -40,6 +39,11 @@ $paper-width: 66vh;
     min-height: 100%;
     display: block;
     margin: 0 auto;
+
+    outline: #caa278 solid 0.2vh;
+    outline-offset: -2.2vh;
+
+    
 }
 
 .envelope {
@@ -69,4 +73,8 @@ $paper-width: 66vh;
         //width: 635px;
         height: 100%;
     }
+}
+
+.main-container {
+    padding: 0 2.2vh;
 }

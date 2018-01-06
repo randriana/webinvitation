@@ -1,84 +1,16 @@
-.logo__container {
-  display: block;
-  position: relative;
-  height: 200px; }
-
-.logo__image {
-  width: 100px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.logo--text-overlay {
-  font-size: 16px;
-  font-weight: 100;
-  width: 100%;
+.main {
   text-align: center;
-  font-family: Didot;
-  letter-spacing: 2px;
-  color: #C0C0C0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.main__paragraph {
-  font-family: Didot;
-  font-weight: 100;
-  letter-spacing: 2px;
-  font-size: 16px;
-  text-align: center;
-  color: #090909;
-  margin-top: 50px; }
-
-.main__date-paragraph {
-  font-family: Didot;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: center;
-  color: #090909;
-  margin-top: 20px;
-  letter-spacing: 2px; }
-
-.name {
-  display: block;
-  text-align: center;
-  font-size: 50px;
-  font-weight: 100;
-  font-family: "Snell Roundhand";
-  color: #3a3a3a;
-  margin-top: 80px; }
-
-.pre-name {
-  display: block;
-  font-family: Didot;
-  text-align: center;
-  font-size: 16px;
-  color: #090909;
-  font-weight: 100; }
-
-.parent-container {
-  font-family: Didot;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 20px auto 0;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  font-size: 16px;
-  letter-spacing: 2px;
-  width: 65%; }
-
-.headline {
-  font-family: cochin;
-  font-weight: 100;
-  font-size: 20px;
-  letter-spacing: 4px;
-  margin-top: 100px;
-  text-align: center;
-  color: #3a3a3a; }
+  margin-top: 60px; }
+  .main__text {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #6e6e6e; }
+    .main__text--name {
+      font-size: 55px;
+      font-weight: 100;
+      font-family: "Snell Roundhand";
+      color: #6e6e6e;
+      margin-top: 50px; }
