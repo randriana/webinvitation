@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="98px" height="65px" viewBox="0 0 98 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>dresscode logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="48" y="24" width="2" height="3" rx="1"></rect>
+        <rect id="path-2" x="47" y="23" width="2" height="3" rx="1"></rect>
+        <rect id="path-3" x="48" y="18" width="2" height="3" rx="1"></rect>
+        <rect id="path-4" x="47" y="20" width="2" height="3" rx="1"></rect>
+        <rect id="path-5" x="48" y="21" width="2" height="3" rx="1"></rect>
+        <rect id="path-6" x="47" y="17" width="2" height="3" rx="1"></rect>
+    </defs>
+    <g id="Mariage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-667.000000, -559.000000)">
+        <g id="dresscode-logo" transform="translate(668.000000, 560.000000)">
+            <path d="M48.5512695,15.8891845 C47.8571339,15.2339 50.4795447,14.4200214 52.4025879,13.0071044 C53.268852,12.3706344 54.9786762,10.6849423 55.2702637,8.5835204 C55.4108273,7.57050171 55.4319109,5.37256609 54.2668457,3.73464345 C53.5601462,2.74112041 51.4035554,0.678918569 49.0822754,0.129174698 C47.8954238,-0.151904865 45.7267935,0.00788649473 44.0898438,0.784936417 C42.5221775,1.52909785 41.4657531,2.87388057 41.1791992,3.40969228 C41.0012846,3.74236522 40.6161828,4.33370439 40.409668,5.14357899 C40.2837423,5.63741265 40.1471863,6.57108373 40,7.94459223" id="Path-7" stroke="#CAA278"></path>
+            <g id="Rectangle-4">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#CAA278" stroke-width="1" x="48.5" y="24.5" width="1" height="2" rx="0.5"></rect>
+            </g>
+            <path d="M48.5,15.5 L48.5,27.5" id="Line" stroke="#CAA278" stroke-linecap="square"></path>
+            <text id="dresscode" font-family="SavoyeLetPlain, Savoye LET" font-size="24" font-weight="normal" letter-spacing="2.18499994" fill="#CAA278">
+                <tspan x="13" y="63">dresscod</tspan>
+                <tspan x="79.722187" y="63" letter-spacing="2.30638885">e</tspan>
+            </text>
+            <g id="Rectangle-4">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <rect stroke="#CAA278" stroke-width="1" x="47.5" y="23.5" width="1" height="2" rx="0.5"></rect>
+            </g>
+            <g id="Rectangle-4">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <rect stroke="#CAA278" stroke-width="1" x="48.5" y="18.5" width="1" height="2" rx="0.5"></rect>
+            </g>
+            <g id="Rectangle-4">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-4"></use>
+                <rect stroke="#CAA278" stroke-width="1" x="47.5" y="20.5" width="1" height="2" rx="0.5"></rect>
+            </g>
+            <g id="Rectangle-4">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-5"></use>
+                <rect stroke="#CAA278" stroke-width="1" x="48.5" y="21.5" width="1" height="2" rx="0.5"></rect>
+            </g>
+            <g id="Rectangle-4">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-6"></use>
+                <rect stroke="#CAA278" stroke-width="1" x="47.5" y="17.5" width="1" height="2" rx="0.5"></rect>
+            </g>
+            <path d="M48.3664551,28.0942383 C45.7138312,30.2211077 42.008469,32.3075876 37.8748265,34.428552 C34.3354691,36.2445898 30.4821251,38.0859094 26.7067871,39.9995117 C24.9555342,40.8871678 23.21484,41.7842975 21.5066914,42.6788571 C13.9636312,46.629167 7.05522305,50.5293557 2.67480469,53.3422852 C-0.635048433,55.4677405 0.612199291,60.2395374 0.707519531,60.310791 C0.867651651,60.4304927 1.95598283,62.3936785 5.09399414,63.0358887 C6.4529327,63.3140024 9.3065297,63.3140024 13.6547852,63.0358887" id="Path-8" stroke="#CAA278"></path>
+            <path d="M95.9674876,28 C93.3148637,30.1268694 89.6095015,32.2133493 85.475859,34.3343137 C81.9365016,36.1503515 78.0831577,37.9916712 74.3078196,39.9052734 C72.5565667,40.7929295 70.8158725,41.6900593 69.1077239,42.5846188 C61.5646637,46.5349287 54.6562556,50.4351174 50.2758372,53.2480469 C46.9659841,55.3735022 48.2132318,60.1452991 48.3085521,60.2165527 C48.4686842,60.3362544 49.5570154,62.2994402 52.6950267,62.9416504 C54.0539652,63.2197642 56.9075622,63.2197642 61.2558177,62.9416504" id="Path-8" stroke="#CAA278" transform="translate(71.983744, 45.575118) scale(-1, 1) translate(-71.983744, -45.575118) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,24 +1,9 @@
-.main {
-  text-align: center;
-  margin-top: 60px;
-
-  &__text {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-    font-size: 12px;
-    line-height: 30px;
-    color: #6e6e6e;
-
-    &--name {
-      font-size: 55px;
-      font-weight: 100;
-      font-family: "Snell Roundhand";
-      color: #6e6e6e;
-      margin-top: 50px;
-    }
-
-  }
+.main__text--name {
+  font-size: 55px;
+  font-weight: 100;
+  font-family: "Snell Roundhand";
+  color: #6e6e6e;
+  margin-top: 50px;
 }
 
 

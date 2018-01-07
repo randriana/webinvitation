@@ -9,3 +9,23 @@
   background: #ECE9E6;
   background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#ECE9E6));
   background: linear-gradient(to right, #FFFFFF, #ECE9E6); }
+
+::ng-deep .main {
+  display: block;
+  margin: 0 auto;
+  width: 450px;
+  text-align: center;
+  margin-top: 60px; }
+  ::ng-deep .main__headline {
+    font-size: 22px;
+    font-family: "Snell Roundhand";
+    color: #6e6e6e; }
+  ::ng-deep .main__text {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #6e6e6e; }
+    ::ng-deep .main__text a {
+      color: #6e6e6e; }
