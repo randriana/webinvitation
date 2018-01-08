@@ -1,8 +1,13 @@
 <div class="main">
   <h1 class="main__headline">Bienvenue à Bergen</h1>
   <p class="main__text">SITUÉE ENTRE LES SEPT MONTAGNES, BERGEN EST LA DEUXIÈME VILLE DU PAYS MAIS CEPENDANT LA PLUS BELLE. VOUS NE SAUREZ PLUS OÙ Y DONNER DE LA TÊTE, ENTRE LE VASTE FJORD QUI S’ÉTEND AUX PORTES DE LA VILLE ET LES MONTAGNES QUI LA PROTÈGE</p>
+  <div class="main__buttons">
+    <button class="main__button" [ngClass]="{'active': currentMapView === mapViews.CHURCH_VIEW}" (click)="selectMapView(mapViews.CHURCH_VIEW)">VOIR L'ÉGLISE</button>
+    <button class="main__button" [ngClass]="{'active': currentMapView === mapViews.HOTEL_VIEW}" (click)="selectMapView(mapViews.HOTEL_VIEW)">VOIR L'HÔTEL</button>
+  </div>
   <div class="main__map-container">
-      <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJ2chmBaD-PEYRitTGf3GjAg4&destination=V%C3%A5gsallmenningen%2016&mode=walking&key=AIzaSyBlbc-mNfUmGHgR_QowrLxgKrf0-0PWspI" allowfullscreen></iframe>
+      <iframe *ngIf="currentMapView === mapViews.CHURCH_VIEW" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAy155J_-PEYRs_VOg9Kge5M&key=AIzaSyBlbc-mNfUmGHgR_QowrLxgKrf0-0PWspI" allowfullscreen></iframe>
+      <iframe *ngIf="currentMapView === mapViews.HOTEL_VIEW" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ_Z3WfKj-PEYRN17PuIFZ0J4&key=AIzaSyBlbc-mNfUmGHgR_QowrLxgKrf0-0PWspI" allowfullscreen></iframe>
   </div>
 </div>
   
