@@ -1,25 +1,8 @@
 <div class="main">
   <h1 class="main__headline">Bienvenue à Bergen</h1>
   <p class="main__text">SITUÉE ENTRE LES SEPT MONTAGNES, BERGEN EST LA DEUXIÈME VILLE DU PAYS MAIS CEPENDANT LA PLUS BELLE. VOUS NE SAUREZ PLUS OÙ Y DONNER DE LA TÊTE, ENTRE LE VASTE FJORD QUI S’ÉTEND AUX PORTES DE LA VILLE ET LES MONTAGNES QUI LA PROTÈGE</p>
-  <br>
-  <p class="main__text">DE NOMBREUSES COMPAGNIES AÉRIENNES PROPOSENT DES VOLS DIRECTS À DESTINATION DE BERGEN (BGO). NOUS VOUS RECOMMANDONS LE COMPARATEUR DE PRIX <a href="http://momondo.com">MOMONDO</a>.</p>
-  <br>
-  <p class="main__text">UNE AUTRE OPTION PLUS AVENTURE S’OFFRE À VOUS, UN VOYAGE EN VOITURE DE CHEZ JUSQU’À BERGEN. IL EST, EN EFFET, POSSIBLE DE PRENDRE UN FERRY AU DANEMARK QUI VOUS CONDUIRA DIRECTEMENT AU COEUR DE BERGEN. CETTE DEUXIÈME OPTION VOUS OFFRE UNE VUE INOUIE DES CÔTES DU SUD NORVÉGIEN. POUR PLUS D’INFORMATIONS, <br><a href="http://norwegian.com">VEUILLEZ CLIQUER ICI</a>.</p>
-  <br>
-  <p class="main__text">LA RÉCEPTION DU MARIAGE AURA LIEU AU COEUR DE LA VILLE, À L’HÔTEL OPUS XVI EDVARD GRIEG HERITAGE. ÉTANT INVITÉ.E.S, VOUS DISPOSEZ DE PROMOTIONS SI VOUS SOUHAITEZ RÉSERVER UNE CHAMBRE DANS L’HÔTEL MÊME. POUR PLUS D’INFORMATIONS,<br><a href="http://opusxvi.no">VEUILLEZ CLIQUER ICI</a>.</p>
-  <br>
-  <p class="main__text">À QUELQUES MÈTRES DE L’HÔTEL, VOUS TROUVEREZ LE BERGEN YMCA HOSTEL QUI VOUS PROPOSE DES NUITÉES À DES PRIX TRÈS ABORDABLES. POUR PLUS D’INFORMATIONS, <a href="http://bergenhostel.com/">VEUILLEZ CLIQUER ICI</a>.</p>
-  <br>
-  <p class="main__text">LA GRANDE MAJORITÉ DES HÔTELS SE SITUENT SOIT À L’AÉROPORT, SOIT AU CENTRE VILLE. NOUS VOUS RECOMMANDONS ICI ÉGALEMENT LE SITE DE COMPARAISON DE PRIX <a href="http://www.momondo.com/hotels/">MOMONDO</a>.</p>
-  <br>
-  <p class="main__text">UNE AUTRE ALTERNATIVE EST LA LOCATION D’UNE CHAMBRE OU D’UN APPARTEMENT CHEZ DES PARTICULIERS, PAR LE BIAIS DU SITE INTERNET AIRBNB. POUR PLUS D’INFORMATIONS, <a href="http://airbnb.com">VEUILLEZ CLIQUER ICI</a>.</p>
-  <div class="main__buttons">
-    <button class="main__button" (click)="changeMapMode(1)">Je veux marcher</button>
-    <button class="main__button" (click)="changeMapMode(2)">Je veux conduire</button>
-  </div>
   <div class="main__map-container">
-      <iframe *ngIf="mapMode === 1" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJ2chmBaD-PEYRitTGf3GjAg4&destination=V%C3%A5gsallmenningen%2016&mode=walking&key=AIzaSyBlbc-mNfUmGHgR_QowrLxgKrf0-0PWspI" allowfullscreen></iframe>
-      <iframe *ngIf="mapMode === 2" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJ2chmBaD-PEYRitTGf3GjAg4&destination=V%C3%A5gsallmenningen%2016&mode=driving&key=AIzaSyBlbc-mNfUmGHgR_QowrLxgKrf0-0PWspI" allowfullscreen></iframe>
+      <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJ2chmBaD-PEYRitTGf3GjAg4&destination=V%C3%A5gsallmenningen%2016&mode=walking&key=AIzaSyBlbc-mNfUmGHgR_QowrLxgKrf0-0PWspI" allowfullscreen></iframe>
   </div>
 </div>
   

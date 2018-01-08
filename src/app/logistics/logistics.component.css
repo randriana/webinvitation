@@ -1,7 +1,5 @@
 .main {
-  height: 2300px; }
-  .main__buttons {
-    margin: 40px 0 60px; }
+  height: 1000px; }
   .main__map-container {
     width: 100%; }
     .main__map-container iframe {
