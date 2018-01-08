@@ -18,7 +18,6 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void {
-    console.log(this.passcode)
     this.userService.login(this.passcode).subscribe((user) => {
       if (user) {
         this.userService.loggedInUser = user;

@@ -1,0 +1,21 @@
+.main {
+  height: 1000px; }
+  .main__form {
+    display: block;
+    margin: 50px auto 0; }
+    .main__form__member {
+      margin-bottom: 40px; }
+    .main__form__name {
+      display: block;
+      font-size: 24px;
+      text-align: center;
+      font-family: "Snell Roundhand"; }
+    .main__form__button {
+      display: block;
+      margin: 10px auto;
+      height: 25px;
+      font-size: 10px;
+      font-family: 'Montserrat', sans-serif;
+      color: #6e6e6e;
+      border-radius: 3px;
+      border: 1px solid #dadada; }

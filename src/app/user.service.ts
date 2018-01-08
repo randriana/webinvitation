@@ -11,6 +11,19 @@ const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
+const testUser: Family = {
+  name: "Andriana",
+  answered: false,
+  passcode: "MLRFA",
+  members: [
+    { name: "Mamy Andriana", attending: false },
+    { name: "Lova Andriana", attending: false },
+    { name: "Rina Andriana", attending: false },
+    { name: "Fitia Andriana", attending: false },
+    { name: "Ainiray Andriana", attending: false }
+  ],
+  knownMembers: true
+}
 
 @Injectable()
 export class UserService {
@@ -22,7 +35,7 @@ export class UserService {
   private url = 'http://localhost:3000/families/';
 
   constructor(private http: HttpClient) {
-    this.loggedInUser = null;
+    this.loggedInUser = testUser;
   }
 
   getFamilyByPasscode(passcode: string): Observable<Family> {
