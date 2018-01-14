@@ -1,5 +1,12 @@
 @import './variables';
 .main {
+    &__buttons {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto;
+    }
+    
     &__button {
         font-family: 'Montserrat', sans-serif;
         color: #6e6e6e;

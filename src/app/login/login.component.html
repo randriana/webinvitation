@@ -1,10 +1,16 @@
 <div class="login-container">
-  <form class="form" (ngSubmit)="login()" #loginForm="ngForm">
-    <img src="assets/logo.png" alt="" class="logo">
-    <div class="form__content">
-        <p><input type="text" placeholder="Enter passcode" [(ngModel)]="passcode" name="passcode"></p>  
-        <button type="submit">Login</button>
-        <p class="error-code">{{ error }}</p>
-    </div>
-  </form>
+  <div class="login__content">
+      <form class="form" (ngSubmit)="login()" #loginForm="ngForm">
+          <img src="assets/logo.png" alt="" class="logo">
+          <div class="form__content">
+              <p><input class="login__input"type="text" placeholder="Enter passcode" [(ngModel)]="passcode" name="passcode"></p>  
+              <button class="login__button" type="submit">Login</button>
+              <p class="error-code">{{ error }}</p>
+          </div>
+        </form>
+        <div class="login__buttons">
+          <button class="login__button" data-lang="FR" [class.active]="settings.language === 'FR'" (click)="setLanguage($event)">FR</button>
+          <button class="login__button" data-lang="NO" [class.active]="settings.language === 'NO'" (click)="setLanguage($event)">NO</button>
+        </div>
+  </div>
 </div>

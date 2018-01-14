@@ -8,6 +8,7 @@ import { AppRoutingModule } from './/app-routing.module';
 
 import { AuthGuardService } from './auth-guard.service';
 import { UserService } from './user.service';
+import { SettingsService } from './settings.service';
 
 
 import { LoginComponent } from './login/login.component';
@@ -38,7 +39,7 @@ import { RsvpComponent } from './rsvp/rsvp.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [AuthGuardService, UserService],
+  providers: [AuthGuardService, UserService, SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,6 +10,12 @@ x-large 24
 
 
 */
+.main__buttons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto; }
+
 .main__button {
   font-family: 'Montserrat', sans-serif;
   color: #6e6e6e;
