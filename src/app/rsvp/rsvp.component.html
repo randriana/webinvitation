@@ -1,15 +1,32 @@
-<div class="main">
-  <p class="main__text">MERCI DE CONFIRMER VOTRE PRÉSENCE AVANT LE 20 FÉVRIER 2018</p>
-  <form class="main__form">
-    <div class="main__form__member" *ngFor="let member of user.members">
-      <span class="main__form__name">{{member.name}}</span>
-      <div class="main__form__button-group">
-        <button class="main__form__button">ACCEPTE AVEC PLAISIR</button>
-        <button class="main__form__button">DÉCLINE AVEC REGRET</button>
-      </div>
-    </div>
-  </form>
+<div class="main" *ngIf="!user.answered">
+  <div *ngIf="user.knownMembers">
+      <p class="main__text">MERCI DE CONFIRMER VOTRE PRÉSENCE<br>AVANT LE 20 FÉVRIER 2018</p>
+      <form class="main__form" (ngSubmit)="onSubmit()" #rsvpKnownForm="ngForm">
+        <div class="main__form__member" *ngFor="let member of user.members">
+          <span class="main__form__name">{{member.name}}</span>
+          <div class="main__form__button-group">
+            <button type="button" class="main__button" [class.active]="member.attending" (click)="setMemberAnswer(member, true)">ACCEPTE AVEC PLAISIR</button>
+            <button type="button" class="main__button" [class.active]="member.attending === false" (click)="setMemberAnswer(member, false)">DÉCLINE AVEC REGRET</button>
+          </div>
+        </div>
+        <button type="submit" class="main__button">ENVOYER</button>
+      </form>
+  </div>
+  <div *ngIf="!user.knownMembers">
+      <p class="main__text">{{user.members.length}} INVITERTE</p>
+      <form class="main__form" (ngSubmit)="onSubmitUnknown()" #rsvpUnKnownForm="ngForm">
+        <div class="main__form__member" *ngFor="let member of user.members; index as i;">
+          <label class="main__input__label"for="guest{{i}}">{{i+1}}.</label>
+          <input id="guest{{i}}" class="main__input" type="text" [(ngModel)]="member.name" [id]="member.name" name="member_{{member.name}}">
+        </div>
+        <button type="submit" class="main__button">ENVOYER</button>
+      </form>
+  </div>
 </div>
+<div class="main" *ngIf="user.answered" style="height: 500px">
+  <p class="main__text">VOTRE RÉPONSE A BIEN ÉTÉ ENREGISTRÉE<br>POUR TOUT CHANGEMENT ULTÉRIEUR<br>VEUILLEZ NOUS ENVOYER UN MESSAGE <a class="main__link" href="mailto:hei@rinafitia.wedding">HEI@RINAFITIA.WEDDING</a></p>
+</div>
+
 
  <!--<h1>{{user.name}}</h1>
 <div *ngIf="!user.answered">

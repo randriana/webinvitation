@@ -1,3 +1,4 @@
+@import '../../sass/common';
 .main {
     height: 1250px;
 
@@ -20,18 +21,5 @@
     &__button {
         height: 45px;
         font-size: 12px;
-        font-family: 'Montserrat', sans-serif;
-        color: #6e6e6e;
-        border-radius: 3px;
-        border: 1px solid rgb(218, 218, 218);
-
-        &:active, &:focus {
-            outline: none;
-        }
-
-        &.active {
-            color: #caa278;
-            border-color: #caa278;
-        }
     }
 }

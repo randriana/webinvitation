@@ -8,7 +8,6 @@
         <a routerLink="home" routerLinkActive="active">ACCUEIL</a>
         <a routerLink="history" routerLinkActive="active">HISTOIRE</a>
         <a routerLink="marriage" routerLinkActive="active">MARIAGE</a>
-        <a routerLink="logistics" routerLinkActive="active">LOGISTIQUE</a>
         <a routerLink="rsvp" routerLinkActive="active">RSVP</a>
       </div>
       <div class="main-container">
@@ -16,6 +15,6 @@
       </div>
   </div>
 </div>
-<div class="envelope__container envelope__container--frontside">
+<div class="envelope__container envelope__container--frontside" (click)="scrollToBottom()">
     <img class="envelope__frontside"src="assets/envelope_silver.svg" alt="envelope">
 </div>

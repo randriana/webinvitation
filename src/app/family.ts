@@ -11,7 +11,7 @@ export class Family {
 export class Member {
     constructor (
         public name: string,
-        public attending: boolean
+        public attending?: boolean
     ) { }
 }
     

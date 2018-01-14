@@ -16,27 +16,40 @@ const testUser: Family = {
   answered: false,
   passcode: "MLRFA",
   members: [
-    { name: "Mamy Andriana", attending: false },
-    { name: "Lova Andriana", attending: false },
-    { name: "Rina Andriana", attending: false },
-    { name: "Fitia Andriana", attending: false },
-    { name: "Ainiray Andriana", attending: false }
+    { name: "Mamy Andriana"},
+    { name: "Lova Andriana"},
+    { name: "Rina Andriana"},
+    { name: "Fitia Andriana"},
+    { name: "Ainiray Andriana"}
   ],
   knownMembers: true
+}
+
+const testUser2: Family = {
+  name: "Andriana",
+  answered: false,
+  passcode: "MLRFA",
+  members: [
+    { name: ""},
+    { name: ""},
+    { name: ""},
+    { name: ""}
+  ],
+  knownMembers: false
 }
 
 @Injectable()
 export class UserService {
 
+  //TODO: make private and use getter and setter
   public loggedInUser: Family;
   public redirectUrl: string;
 
+  //TODO: change back url
   //private url = 'families/';
   private url = 'http://localhost:3000/families/';
 
-  constructor(private http: HttpClient) {
-    this.loggedInUser = testUser;
-  }
+  constructor(private http: HttpClient) { }
 
   getFamilyByPasscode(passcode: string): Observable<Family> {
     let url = `${this.url}${passcode}`;

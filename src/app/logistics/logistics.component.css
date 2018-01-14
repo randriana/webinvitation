@@ -1,3 +1,43 @@
+/* COLOR */
+/*
+lite 10
+x-small 1.2vh
+small 12
+large 22
+x-large 24
+
+
+
+
+*/
+.main__button {
+  font-family: 'Montserrat', sans-serif;
+  color: #6e6e6e;
+  border-radius: 3px;
+  border: 1px solid #dadada;
+  cursor: pointer; }
+  .main__button:active, .main__button:focus {
+    outline: none; }
+  .main__button.active, .main__button:active {
+    color: #caa278;
+    border-color: #caa278; }
+
+.main__input {
+  border: none;
+  border-bottom: 1px solid #dadada;
+  font-size: 24px;
+  font-family: "Snell Roundhand";
+  color: #6e6e6e;
+  padding: 0 20px; }
+  .main__input:focus {
+    outline: none; }
+  .main__input__label {
+    font-size: 20px;
+    color: #6e6e6e; }
+
+.main__link {
+  color: #caa278; }
+
 .main {
   height: 1250px; }
   .main__map-container {
@@ -16,13 +56,4 @@
     margin: 50px auto; }
   .main__button {
     height: 45px;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    color: #6e6e6e;
-    border-radius: 3px;
-    border: 1px solid #dadada; }
-    .main__button:active, .main__button:focus {
-      outline: none; }
-    .main__button.active {
-      color: #caa278;
-      border-color: #caa278; }
+    font-size: 12px; }

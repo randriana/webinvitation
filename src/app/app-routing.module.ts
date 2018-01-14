@@ -19,7 +19,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'history', component: HistoryComponent },
       { path: 'marriage', component: MarriageComponent },
-      { path: 'logistics', component: LogisticsComponent },
+      { path: 'addresses', component: LogisticsComponent },
       { path: 'rsvp', component: RsvpComponent },
     ]},
 ];

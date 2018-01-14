@@ -1,0 +1,41 @@
+@import './variables';
+.main {
+    &__button {
+        font-family: 'Montserrat', sans-serif;
+        color: #6e6e6e;
+        border-radius: 3px;
+        border: 1px solid rgb(218, 218, 218);
+        cursor: pointer;
+
+        &:active, &:focus {
+            outline: none;
+        }
+
+        &.active, &:active {
+            color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+
+    &__input {
+        border: none;
+        border-bottom: 1px solid #dadada;
+        font-size: 24px;
+        font-family: "Snell Roundhand";
+        color: #6e6e6e;
+        padding: 0 20px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &__label {
+            font-size: 20px;
+            color: #6e6e6e;
+        }
+    }
+
+    &__link {
+        color: $primary-color;
+    }
+}

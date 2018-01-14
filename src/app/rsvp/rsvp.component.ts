@@ -20,6 +20,10 @@ export class RsvpComponent implements OnInit {
   ngOnInit() {
   }
 
+  setMemberAnswer(member, answer) {
+    member.attending = answer;
+  }
+
   onSubmit() {
     this.user.answered = true;
     this.userService.submitAnswer().subscribe();

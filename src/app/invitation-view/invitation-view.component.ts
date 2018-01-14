@@ -20,4 +20,8 @@ export class InvitationViewComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  scrollToBottom() {
+    window.scrollBy(0, 175);
+  }
 }
