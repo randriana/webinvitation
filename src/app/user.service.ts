@@ -50,7 +50,9 @@ export class UserService {
   //private url = 'families/';
   private url = 'http://localhost:3000/families/';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.loggedInUser = testUser;
+  }
 
   getFamilyByPasscode(passcode: string): Observable<Family> {
     let url = `${this.url}${passcode}`;

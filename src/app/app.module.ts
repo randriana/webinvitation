@@ -8,17 +8,19 @@ import { AppRoutingModule } from './/app-routing.module';
 
 import { AuthGuardService } from './auth-guard.service';
 import { UserService } from './user.service';
-import { SettingsService } from './settings.service';
+import { LanguageService } from './language.service';
 
 
 import { LoginComponent } from './login/login.component';
 import { InvitationViewComponent } from './invitation-view/invitation-view.component';
-import { AttendingPipe } from './attending.pipe';
 import { HomeComponent } from './home/home.component';
 import { HistoryComponent } from './history/history.component';
 import { MarriageComponent } from './marriage/marriage.component';
 import { LogisticsComponent } from './logistics/logistics.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
+
+import { AttendingPipe } from './attending.pipe';
+import { TranslatePipe } from './translate.pipe';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { RsvpComponent } from './rsvp/rsvp.component';
     HistoryComponent,
     MarriageComponent,
     LogisticsComponent,
-    RsvpComponent
+    RsvpComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,7 @@ import { RsvpComponent } from './rsvp/rsvp.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [AuthGuardService, UserService, SettingsService],
+  providers: [AuthGuardService, UserService, LanguageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

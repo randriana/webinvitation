@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router }      from '@angular/router';
 import { UserService } from '../user.service';
-import { SettingsService } from '../settings.service';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-login',
@@ -12,20 +12,21 @@ export class LoginComponent implements OnInit {
 
   passcode: string;
   error: string;
+  placeholderText: string = this.languageService.translations.LOGIN_INPUT_PLACEHOLDER[this.languageService.activeLanguage];
 
-  constructor(public userService: UserService, public router: Router, public settings: SettingsService) {
-    this.passcode = "";
+  constructor(public userService: UserService, public router: Router, public languageService: LanguageService) {
+    this.passcode = '';
   }
 
   ngOnInit() {
   }
 
   setLanguage(e) {
-    let lang = e.target.dataset.lang;
-    this.settings.language = lang;
+    const lang = e.target.dataset.lang;
+    this.languageService.activeLanguage = lang;
   }
 
-  //TODO add form validator here
+  // TODO add form validator here
   login(): void {
     this.userService.login(this.passcode).subscribe((user) => {
       if (user) {

@@ -1,25 +1,25 @@
 <div class="main">
-  <h1 class="main__headline">Le Samedi 11 Août 2018</h1>
+  <h1 class="main__headline">{{ 'MARRIAGE_DATE' | translate }}</h1>
   <p class="main__text">
-    LA CÉRÉMONIE AURA LIEU À 14H00 <br>
-    À L’ÉGLISE DE SANDVIKEN <br>
+    {{ 'MARRIAGE_TIME' | translate }} <br>
+    {{ 'MARRIAGE_PLACE' | translate }} <br>
     KIRKEGATEN 1A <br>
     5019 BERGEN <br>
   </p>
   <br>
   <p class="main__text">
-      LA CÉLÉBRATION CONTINUERA <br>
-      À L’HÔTEL OPUS XVI <br>
+      {{ 'MARRIAGE_PARTY_TEXT' | translate }} <br>
+      {{ 'MARRIAGE_HOTEL' | translate }} <br>
       EDVARD GRIEG HERITAGE <br>
       VÅGGSALLEMENNINGEN 16 <br>
       5014 BERGEN <br>
   </p>
   <img class="main__icon" src="assets/dresscode.svg" alt="">
-  <p class="main__text ">LES MESSIEURS SONT ATTENDUS <br>EN COSTUME NOIR, CHEMISE BLANCHE ET NOEUD PAPILLON,
-    <br>LES DAMES EN BLANC ET/OU NOIR.</p>
+  <p class="main__text ">
+    {{ 'MARRIAGE_GENTLEMEN_TEXT' | translate }} <br>
+    {{ 'MARRIAGE_GENTLEMEN_COSTUME' | translate }} <br>
+    {{ 'MARRIAGE_LADIES_COSTUME' | translate }}
+  </p>
   <img class="main__icon" src="assets/cadeau.svg" alt="">
-  <p class="main__text ">NOTRE PLUS BEAU CADEAU SERA, À N’EN PAS DOUTER, VOTRE PRÉSENCE,
-      MAIS SI VOUS SOUHAITEZ NOUS TÉMOIGNER DAVANTAGE,
-      UNE URNE SERA À DISPOSITION POUR VOUS PERMETTRE
-       DE PARTICIPER AUX PROJETS DES FUTUR·E·S MARIÉ·E·S.</p>
+  <p class="main__text "> {{ 'MARRIAGE_GIFT_TEXT' | translate }} </p>
 </div>

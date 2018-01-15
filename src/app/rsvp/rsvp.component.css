@@ -60,6 +60,7 @@ x-large 24
     display: block;
     margin: 10px auto;
     height: 25px;
+    width: 140px;
     font-size: 10px; }
     .main__button[type="submit"] {
       font-size: 12px;
