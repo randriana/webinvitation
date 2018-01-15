@@ -1,22 +1,21 @@
 /* COLOR */
-/*
-lite 10
-x-small 1.2vh
-small 12
-large 22
-x-large 24
-
-
-
-
-*/
+/* FONT SIZE */
+/* 10px */
+/* 11px */
+/* 12px */
+/* 18px */
+/* 20px */
+/* 22px */
+/* 24px */
+/* 55px */
+/* px value */
 .pre-whitespace {
   width: 100%;
   height: 67vh; }
 
 .scroll-component-container {
   width: 100%;
-  height: 800px;
+  height: 90vh;
   z-index: 0; }
 
 .navbar {

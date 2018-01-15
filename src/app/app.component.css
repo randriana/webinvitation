@@ -1,3 +1,14 @@
+/* COLOR */
+/* FONT SIZE */
+/* 10px */
+/* 11px */
+/* 12px */
+/* 18px */
+/* 20px */
+/* 22px */
+/* 24px */
+/* 55px */
+/* px value */
 .mobile-blocker {
   position: fixed;
   top: 0;
@@ -5,7 +16,7 @@
   height: 100%;
   width: 100%;
   z-index: 100;
-  font-size: 24px;
+  font-size: 2.57h;
   background: #ECE9E6;
   background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#ECE9E6));
   background: linear-gradient(to right, #FFFFFF, #ECE9E6); }
@@ -13,19 +24,19 @@
 ::ng-deep .main {
   display: block;
   margin: 0 auto;
-  width: 450px;
+  width: 48.3vh;
   text-align: center;
-  margin-top: 60px; }
+  margin-top: 6.5vh; }
   ::ng-deep .main__headline {
-    font-size: 22px;
+    font-size: 2.37vh;
     font-family: "Snell Roundhand";
     color: #6e6e6e; }
   ::ng-deep .main__text {
     display: block;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-    font-size: 12px;
-    line-height: 30px;
+    letter-spacing: .22vh;
+    font-size: 1.3vh;
+    line-height: 3.3vh;
     color: #6e6e6e; }
     ::ng-deep .main__text a {
       color: #6e6e6e; }

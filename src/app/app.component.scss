@@ -1,3 +1,4 @@
+@import '../sass/variables';
 .mobile-blocker {
     position: fixed;
     top: 0;
@@ -5,7 +6,7 @@
     height: 100%;
     width: 100%;
     z-index: 100;
-    font-size: 24px;
+    font-size: $font-size--x-large;
 
     background: #ECE9E6;
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
@@ -15,12 +16,12 @@
 ::ng-deep .main {
     display: block;
     margin: 0 auto;
-    width: 450px;
+    width: $px--450;
     text-align: center;
-    margin-top: 60px;
+    margin-top: $px--60;
 
     &__headline {
-        font-size: 22px;
+        font-size: $font-size--large;
         font-family: "Snell Roundhand";
         color: #6e6e6e;
     }
@@ -28,9 +29,9 @@
     &__text {
       display: block;
       font-family: 'Montserrat', sans-serif;
-      letter-spacing: 2px;
-      font-size: 12px;
-      line-height: 30px;
+      letter-spacing: .22vh;
+      font-size: $font-size--small;
+      line-height: $px--30;
       color: #6e6e6e;
 
       a {

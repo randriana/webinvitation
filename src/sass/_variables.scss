@@ -2,15 +2,19 @@
 $gold: #caa278 !default;
 $primary-color: $gold !default;
 
+/* FONT SIZE */
+$font-size--lite: 1.08vh; /* 10px */
+$font-size--x-small: 1.2vh; /* 11px */
+$font-size--small: 1.3vh; /* 12px */
+$font-size--medium-lite: 1.9vh; /* 18px */
+$font-size--medium: 2vh; /* 20px */
+$font-size--large: 2.37vh; /* 22px */
+$font-size--x-large: 2.57h; /* 24px */
+$font-size--xx-large: 6vh; /* 55px */
 
-/*
-lite 10
-x-small 1.2vh
-small 12
-large 22
-x-large 24
-
-
-
-
-*/
+/* px value */
+$px--30: 3.3vh;
+$px--50: 5.42vh;
+$px--60: 6.5vh;
+$px--450: 48.3vh;
+$px--800: 90vh;

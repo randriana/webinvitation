@@ -1,6 +1,17 @@
+/* COLOR */
+/* FONT SIZE */
+/* 10px */
+/* 11px */
+/* 12px */
+/* 18px */
+/* 20px */
+/* 22px */
+/* 24px */
+/* 55px */
+/* px value */
 .main__text--name {
-  font-size: 55px;
+  font-size: 6vh;
   font-weight: 100;
   font-family: "Snell Roundhand";
   color: #6e6e6e;
-  margin-top: 50px; }
+  margin-top: 5.42vh; }

@@ -1,9 +1,10 @@
+@import '../../sass/variables';
 .main__text--name {
-  font-size: 55px;
+  font-size: $font-size--xx-large;
   font-weight: 100;
   font-family: "Snell Roundhand";
   color: #6e6e6e;
-  margin-top: 50px;
+  margin-top: $px--50;
 }
 
 
