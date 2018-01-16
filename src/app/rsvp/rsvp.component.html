@@ -1,4 +1,4 @@
-<div class="main" *ngIf="!user.answered">
+<div class="main" *ngIf="!user.answered" data-dynamic-height>
   <div *ngIf="user.knownMembers">
       <p class="main__text">
         {{ 'RSVP_ANSWER_TEXT' | translate }}<br>
@@ -26,7 +26,7 @@
       </form>
   </div>
 </div>
-<div class="main" *ngIf="user.answered" style="height: 500px">
+<div class="main" *ngIf="user.answered">
   <p class="main__text">
     {{ 'RSVP_POST_ANSWER' | translate }}.<br>
     {{ 'RSVP_CHANGE' | translate }}<br>

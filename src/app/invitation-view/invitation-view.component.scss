@@ -1,5 +1,4 @@
 @import '../../sass/common';
-$paper-height: $px--800;
 $paper-width: 66vh;
 
 .pre-whitespace {
@@ -64,13 +63,10 @@ $paper-width: 66vh;
             height: 47vh;
         }
     }
-
     &__frontside {
-        //width: 650px;
         height: 100%;
     }
     &__backside {
-        //width: 635px;
         height: 100%;
     }
 }

@@ -21,6 +21,9 @@ const testUser: Family = {
     { name: "Lova Andriana"},
     { name: "Rina Andriana"},
     { name: "Fitia Andriana"},
+    { name: "Fitia Andriana"},
+    { name: "Fitia Andriana"},
+    { name: "Fitia Andriana"},
     { name: "Ainiray Andriana"}
   ],
   knownMembers: true
@@ -31,10 +34,10 @@ const testUser2: Family = {
   answered: false,
   passcode: "MLRFA",
   members: [
-    { name: ""},
-    { name: ""},
-    { name: ""},
-    { name: ""}
+    { name: "" },
+    { name: "" },
+    { name: "" },
+    { name: "" }
   ],
   knownMembers: false
 }
