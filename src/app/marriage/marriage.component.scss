@@ -1,6 +1,8 @@
+@import '../../sass/variables';
 .main {
-    height: 1200px;
+    height: $px--1200;
     &__icon {
-        margin: 35px 0;
+        margin: $px--35 0;
+        height: $px--65;
     }
 }

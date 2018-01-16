@@ -111,11 +111,11 @@ export const TRANSLATIONS = {
         'FR': 'AVANT LE 20 FÉVRIER 2018'
     },
     'RSVP_ACCEPT': {
-        'NO': 'GODTA MED GLEDE',
+        'NO': 'SKAL KOMME',
         'FR': 'ACCEPTE AVEC PLAISIR'
     },
     'RSVP_DECLINE': {
-        'NO': 'AVSLÅ HØFLIG',
+        'NO': 'KAN IKKE KOMME',
         'FR': 'DÉCLINE AVEC REGRET'
     },
     'RSVP_SEND': {

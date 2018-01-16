@@ -1,4 +1,5 @@
 /* COLOR */
+/* px value */
 /* FONT SIZE */
 /* 10px */
 /* 11px */
@@ -8,7 +9,6 @@
 /* 22px */
 /* 24px */
 /* 55px */
-/* px value */
 .main__buttons {
   width: 60%;
   display: flex;
@@ -17,6 +17,7 @@
 
 .main__button {
   font-family: 'Montserrat', sans-serif;
+  background-color: #FFF;
   color: #6e6e6e;
   border-radius: 3px;
   border: 1px solid #dadada;

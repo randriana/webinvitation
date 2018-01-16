@@ -1,4 +1,5 @@
 /* COLOR */
+/* px value */
 /* FONT SIZE */
 /* 10px */
 /* 11px */
@@ -8,7 +9,6 @@
 /* 22px */
 /* 24px */
 /* 55px */
-/* px value */
 .main__buttons {
   width: 60%;
   display: flex;
@@ -17,6 +17,7 @@
 
 .main__button {
   font-family: 'Montserrat', sans-serif;
+  background-color: #FFF;
   color: #6e6e6e;
   border-radius: 3px;
   border: 1px solid #dadada;
@@ -44,25 +45,24 @@
   color: #caa278; }
 
 .main {
-  height: 1250px; }
+  height: 135vh; }
   .main__form {
     display: block;
-    margin: 50px auto 0; }
+    margin: 5.42vh auto 0; }
     .main__form__member {
-      margin-bottom: 40px; }
+      margin-bottom: 4.3vh; }
     .main__form__name {
       display: block;
-      font-size: 24px;
+      font-size: 2.57vh;
       text-align: center;
       font-family: "Snell Roundhand"; }
   .main__button {
     display: block;
-    margin: 10px auto;
-    height: 25px;
-    width: 140px;
-    font-size: 10px; }
+    margin: 1.08vh auto;
+    height: 2.69vh;
+    width: 15.06vh;
+    font-size: 1.08vh; }
     .main__button[type="submit"] {
-      font-size: 12px;
-      width: 135px;
-      height: 30px;
+      font-size: 1.3vh;
+      height: 3.3vh;
       border: 3px double #caa278; }

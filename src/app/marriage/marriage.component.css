@@ -1,4 +1,16 @@
+/* COLOR */
+/* px value */
+/* FONT SIZE */
+/* 10px */
+/* 11px */
+/* 12px */
+/* 18px */
+/* 20px */
+/* 22px */
+/* 24px */
+/* 55px */
 .main {
-  height: 1200px; }
+  height: 129vh; }
   .main__icon {
-    margin: 35px 0; }
+    margin: 3.75vh 0;
+    height: 7vh; }

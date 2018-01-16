@@ -2,19 +2,28 @@
 $gold: #caa278 !default;
 $primary-color: $gold !default;
 
+/* px value */
+$px--10: 1.08vh;
+$px--25: 2.69vh;
+$px--30: 3.3vh;
+$px--35: 3.75vh;
+$px--40: 4.3vh;
+$px--50: 5.42vh;
+$px--60: 6.5vh;
+$px--65: 7vh;
+$px--140: 15.06vh;
+$px--450: 48.3vh;
+$px--750: 80.6vh;
+$px--800: 90vh;
+$px--1200: 129vh;
+$px--1255: 135vh;
+
 /* FONT SIZE */
-$font-size--lite: 1.08vh; /* 10px */
+$font-size--lite: $px--10; /* 10px */
 $font-size--x-small: 1.2vh; /* 11px */
 $font-size--small: 1.3vh; /* 12px */
 $font-size--medium-lite: 1.9vh; /* 18px */
 $font-size--medium: 2vh; /* 20px */
 $font-size--large: 2.37vh; /* 22px */
-$font-size--x-large: 2.57h; /* 24px */
+$font-size--x-large: 2.57vh; /* 24px */
 $font-size--xx-large: 6vh; /* 55px */
-
-/* px value */
-$px--30: 3.3vh;
-$px--50: 5.42vh;
-$px--60: 6.5vh;
-$px--450: 48.3vh;
-$px--800: 90vh;

@@ -1,32 +1,31 @@
 @import '../../sass/common';
 .main {
-    height: 1250px;
+    height: $px--1255;
     &__form {
         display: block;
-        margin: 50px auto 0;
+        margin: $px--50 auto 0;
 
         &__member {
-            margin-bottom: 40px;
+            margin-bottom: $px--40;
         }
         &__name {
             display: block;
-            font-size: 24px;
+            font-size: $font-size--x-large;
             text-align: center;
             font-family: "Snell Roundhand";
         }
     }
     &__button {
         display: block;
-        margin: 10px auto;
+        margin: $px--10 auto;
 
-        height: 25px;
-        width: 140px;
-        font-size: 10px;
+        height: $px--25;
+        width: $px--140;
+        font-size: $font-size--lite;
 
         &[type="submit"] {
-            font-size: 12px;
-            width: 135px;
-            height: 30px;       
+            font-size: $font-size--small;
+            height: $px--30;       
             border: 3px double $primary-color;
         }
     }
