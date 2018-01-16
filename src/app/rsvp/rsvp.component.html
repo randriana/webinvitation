@@ -16,11 +16,11 @@
       </form>
   </div>
   <div *ngIf="!user.knownMembers">
-      <p class="main__text">{{user.members.length}} INVITERTE</p>
+      <p class="main__text">{{user.members.length}} {{ 'RSVP_UNKNOWN_TEXT_1' | translate }} {{ user.name | uppercase }} {{ 'RSVP_UNKNOWN_TEXT_2' | translate }}</p>
       <form class="main__form" (ngSubmit)="onSubmitUnknown()" #rsvpUnKnownForm="ngForm">
         <div class="main__form__member" *ngFor="let member of user.members; index as i;">
-          <label class="main__input__label"for="guest{{i}}">{{i+1}}.</label>
-          <input id="guest{{i}}" class="main__input" type="text" [(ngModel)]="member.name" [id]="member.name" name="member_{{member.name}}">
+          <label class="main__input__label" for="guest{{i}}">{{i+1}}.</label>
+          <input id="guest{{i}}" class="main__input" type="text" [(ngModel)]="member.name" [id]="member.name" name="member_{{member.name}}" placeholder="PRÉNOM NOM">
         </div>
         <button type="submit" class="main__button">{{ 'RSVP_SEND' | translate }}</button>
       </form>

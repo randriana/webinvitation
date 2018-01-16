@@ -15,7 +15,7 @@
     width: 60%;
     display: flex;
     justify-content: space-between;
-    margin: 50px auto; }
+    margin: 5.42vh auto; }
   .main__button {
     font-family: 'Montserrat', sans-serif;
     background-color: #FFF;
@@ -31,14 +31,18 @@
   .main__input {
     border: none;
     border-bottom: 1px solid #dadada;
-    font-size: 24px;
+    font-size: 2.57vh;
     font-family: "Snell Roundhand";
     color: #6e6e6e;
-    padding: 0 20px; }
+    padding: 0 2vh; }
+    .main__input::placeholder {
+      color: #cfcfcf;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3vh; }
     .main__input:focus {
       outline: none; }
     .main__input__label {
-      font-size: 20px;
+      font-size: 1.9vh;
       color: #6e6e6e; }
   .main__link {
     color: #caa278; }

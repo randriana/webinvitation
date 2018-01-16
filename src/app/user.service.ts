@@ -13,24 +13,18 @@ const httpOptions = {
 
 //TODO: delete testusers
 const testUser: Family = {
-  name: "Andriana",
+  name: "Rakotondatsimba",
   answered: false,
   passcode: "MLRFA",
   members: [
     { name: "Mamy Andriana"},
-    { name: "Lova Andriana"},
-    { name: "Rina Andriana"},
-    { name: "Fitia Andriana"},
-    { name: "Fitia Andriana"},
-    { name: "Fitia Andriana"},
-    { name: "Fitia Andriana"},
-    { name: "Ainiray Andriana"}
+    { name: "Lova Andriana"}
   ],
   knownMembers: true
 }
 
 const testUser2: Family = {
-  name: "Andriana",
+  name: "Andrianaivoravelona",
   answered: false,
   passcode: "MLRFA",
   members: [
@@ -54,7 +48,7 @@ export class UserService {
   private url = 'http://localhost:3000/families/';
 
   constructor(private http: HttpClient) {
-    this.loggedInUser = testUser;
+    this.loggedInUser = testUser2;
   }
 
   getFamilyByPasscode(passcode: string): Observable<Family> {

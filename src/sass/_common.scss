@@ -5,7 +5,7 @@
         width: 60%;
         display: flex;
         justify-content: space-between;
-        margin: 50px auto;
+        margin: $px--50 auto;
     }
     
     &__button {
@@ -29,17 +29,23 @@
     &__input {
         border: none;
         border-bottom: 1px solid #dadada;
-        font-size: 24px;
+        font-size: $font-size--x-large;
         font-family: "Snell Roundhand";
         color: #6e6e6e;
-        padding: 0 20px;
+        padding: 0 $px--20;
+
+        &::placeholder {
+            color: #cfcfcf;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3vh;
+        }
 
         &:focus {
             outline: none;
         }
 
         &__label {
-            font-size: 20px;
+            font-size: $font-size--medium-lite;
             color: #6e6e6e;
         }
     }
