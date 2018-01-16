@@ -9,5 +9,40 @@
 /* 22px */
 /* 24px */
 /* 55px */
+.main__buttons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto; }
+
+.main__button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFF;
+  color: #6e6e6e;
+  border-radius: 3px;
+  border: 1px solid #dadada;
+  cursor: pointer; }
+  .main__button:active, .main__button:focus {
+    outline: none; }
+  .main__button.active, .main__button:active {
+    color: #caa278;
+    border-color: #caa278; }
+
+.main__input {
+  border: none;
+  border-bottom: 1px solid #dadada;
+  font-size: 24px;
+  font-family: "Snell Roundhand";
+  color: #6e6e6e;
+  padding: 0 20px; }
+  .main__input:focus {
+    outline: none; }
+  .main__input__label {
+    font-size: 20px;
+    color: #6e6e6e; }
+
+.main__link {
+  color: #caa278; }
+
 .main {
   height: 80.6vh; }

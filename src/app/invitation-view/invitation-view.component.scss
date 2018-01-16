@@ -1,4 +1,4 @@
-@import '../../sass/variables';
+@import '../../sass/common';
 $paper-height: $px--800;
 $paper-width: 66vh;
 
@@ -9,7 +9,6 @@ $paper-width: 66vh;
 
 .scroll-component-container {
     width: 100%;
-    height: $paper-height;
     z-index: 0;
 }
 
