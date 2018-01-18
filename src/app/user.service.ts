@@ -44,8 +44,8 @@ export class UserService {
   public redirectUrl: string;
 
   //TODO: change back url
-  //private url = 'families/';
-  private url = 'http://localhost:3000/families/';
+  private url = '/families';
+  //private url = 'http://localhost:3000/families/';
 
   constructor(private http: HttpClient) {
     this.loggedInUser = testUser2;

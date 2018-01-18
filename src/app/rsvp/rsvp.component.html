@@ -20,7 +20,7 @@
       <form class="main__form" (ngSubmit)="onSubmitUnknown()" #rsvpUnKnownForm="ngForm">
         <div class="main__form__member" *ngFor="let member of user.members; index as i;">
           <label class="main__input__label" for="guest{{i}}">{{i+1}}.</label>
-          <input id="guest{{i}}" class="main__input" type="text" [(ngModel)]="member.name" [id]="member.name" name="member_{{member.name}}" placeholder="PRÉNOM NOM">
+          <input id="guest{{i}}" class="main__input" type="text" [(ngModel)]="member.name" [id]="member.name" name="member_{{member.name}}" (keyup)="onKey($event)" placeholder="{{ 'RSVP_FIRST_LAST_NAME' | translate }}">
         </div>
         <button type="submit" class="main__button">{{ 'RSVP_SEND' | translate }}</button>
       </form>
