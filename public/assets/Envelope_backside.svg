@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="770px" height="531px" viewBox="0 0 770 531" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Backside</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Test" transform="translate(-587.000000, -610.000000)" stroke="#979797" fill="#D8D8D8">
+            <path d="M587.145314,924.189635 L913.817619,1139.66932 L1022.64537,1139.66932 L1356.59619,924.189635 C1257.41923,830.279317 1161.81704,739.284218 1069.78964,651.204336 C1038.36013,625.809338 1005.7205,612.289228 971.870752,610.644007 C933.168664,613.644341 900.650611,627.164451 874.316594,651.204336 C806.752013,713.583059 711.028253,804.578158 587.145314,924.189635 Z" id="Backside"></path>
+        </g>
+    </g>
+</svg>
