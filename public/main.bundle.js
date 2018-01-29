@@ -1084,8 +1084,7 @@ var UserService = (function () {
     function UserService(http) {
         this.http = http;
         //TODO: change back url
-        this.url = '/families';
-        this.loggedInUser = testUser2;
+        this.url = 'families/';
     }
     UserService.prototype.getFamilyByPasscode = function (passcode) {
         var url = "" + this.url + passcode;

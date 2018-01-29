@@ -3,10 +3,17 @@ var router = express.Router();
 
 var Family = require('../models/family');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/all', function(req, res, next) {
+  Family.find({}, function(err, fam) {
+    if(err) {
+      res.send(err);
+    } else {
+      res.status(200).send(fam);
+    }
+  });
 });
+
+
 
 router.get('/:passcode', function(req, res, next) {
   Family.findOne({ passcode: req.params.passcode }, function(err, fam) {
@@ -15,6 +22,7 @@ router.get('/:passcode', function(req, res, next) {
     } else if(!fam) {
       res.status(404).send('User not found');
     } else {
+      _setVisited(fam);
       res.send(fam);
     }
   });
@@ -44,7 +52,7 @@ router.put('/submitAnswer', function(req, res, next) {
 
 router.post('/post', function(req, res, next) {
   var newFamily = new Family(req.body)
-  
+
     newFamily.save(function (err, newFam) {
       if (err) {
         res.send(err);
@@ -53,5 +61,12 @@ router.post('/post', function(req, res, next) {
       }
     });
 });
+
+function _setVisited(fam) {
+  fam.openedInvite = true;
+  fam.save(function(err, updatedFam){
+
+  });
+}
 
 module.exports = router;

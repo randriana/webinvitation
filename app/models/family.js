@@ -10,7 +10,8 @@ var FamilySchema = new Schema({
   members: [],
   passcode: {type: String, default: ""},
   answered: {type: Boolean, default: false},
-  knownMembers: {type: Boolean, default: true}
+  knownMembers: {type: Boolean, default: true},
+  openedInvite: {type: Boolean, default: false}
 });
 
 module.exports = mongoose.model('Family', FamilySchema);
