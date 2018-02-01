@@ -8,7 +8,7 @@ var root = path.normalize(__dirname + '/..');
 
 module.exports = function ( app ) {
     // uncomment after placing your favicon in /public
-    //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+    app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
     app.use(cookieParser());
     app.use(express.static(root + '/public'));
 
@@ -21,7 +21,7 @@ module.exports = function ( app ) {
         err.status = 404;
         next(err);
     });
-    
+
     // error handler
     app.use(function(err, req, res, next) {
         // set locals, only providing error in development
