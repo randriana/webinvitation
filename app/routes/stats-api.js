@@ -13,6 +13,16 @@ router.get('/answeredGuests', function (req, res, next) {
   })
 });
 
+router.get('/openedInvites', function (req, res, next) {
+  Family.find({'openedInvite': true}, function (err, data) {
+    if(err) {
+      res.send(err);
+    } else {
+      res.send(data);
+    }
+  })
+});
+
 router.get('/all', function(req, res, next) {
   var data = {
     numberOfAttendies: 0,
