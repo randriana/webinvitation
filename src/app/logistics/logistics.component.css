@@ -22,7 +22,8 @@
     color: #6e6e6e;
     border-radius: 3px;
     border: 1px solid #dadada;
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #fff; }
     .main__button:active, .main__button:focus {
       outline: none; }
     .main__button.active, .main__button:active {

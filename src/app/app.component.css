@@ -22,7 +22,8 @@
     color: #6e6e6e;
     border-radius: 3px;
     border: 1px solid #dadada;
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #fff; }
     .main__button:active, .main__button:focus {
       outline: none; }
     .main__button.active, .main__button:active {
@@ -58,6 +59,13 @@
   background: #ECE9E6;
   background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#ECE9E6));
   background: linear-gradient(to right, #FFFFFF, #ECE9E6); }
+  .mobile-blocker .text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif; }
 
 ::ng-deep .main {
   display: block;

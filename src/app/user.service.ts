@@ -11,52 +11,24 @@ const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
-//TODO: delete testusers
-const testUser: Family = {
-  name: "Rakotondatsimba",
-  answered: false,
-  passcode: "MLRFA",
-  members: [
-    { name: "Mamy Andriana"},
-    { name: "Lova Andriana"}
-  ],
-  knownMembers: true
-}
-
-const testUser2: Family = {
-  name: "Andrianaivoravelona",
-  answered: false,
-  passcode: "MLRFA",
-  members: [
-    { name: "" },
-    { name: "" },
-    { name: "" },
-    { name: "" }
-  ],
-  knownMembers: false
-}
-
 @Injectable()
 export class UserService {
 
-  //TODO: make private and use getter and setter
   public loggedInUser: Family;
   public redirectUrl: string;
 
-  //TODO: change back url
-  private url = 'families/';
-  //private url = 'http://localhost:3000/families/';
+  private url = 'http://46.101.120.12/families/';
 
   constructor(private http: HttpClient) {
   }
 
   getFamilyByPasscode(passcode: string): Observable<Family> {
-    let url = `${this.url}${passcode}`;
+    const url = `${this.url}${passcode}`;
     return this.http.get<Family>(url);
   }
 
   submitAnswer() {
-    let url = `${this.url}/submitAnswer`;
+    const url = `${this.url}/submitAnswer`;
     return this.http.put(url, this.loggedInUser);
   }
 

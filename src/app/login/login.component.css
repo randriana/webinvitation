@@ -22,7 +22,8 @@
     color: #6e6e6e;
     border-radius: 3px;
     border: 1px solid #dadada;
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #fff; }
     .main__button:active, .main__button:focus {
       outline: none; }
     .main__button.active, .main__button:active {
@@ -78,7 +79,8 @@
   font-size: 20px;
   text-align: center;
   border-radius: 3px;
-  border: 1px solid #dadada; }
+  border: 1px solid #dadada;
+  background-color: #FFFFFF; }
   .login__button:focus, .login__input:focus {
     outline: none; }
   .login__button:active, .login__button.active, .login__input:active, .login__input.active {
