@@ -14,9 +14,7 @@
   .main__buttons {
     width: 60%;
     display: -webkit-flex;
-    display: flex;
     -webkit-justify-content: space-between;
-    justify-content: space-between;
     margin: 5.42vh auto; }
   .main__button {
     font-family: 'Montserrat', sans-serif;
@@ -60,9 +58,7 @@
 
 .navbar {
   display: -webkit-flex;
-  display: flex;
   -webkit-justify-content: space-between;
-  justify-content: space-between;
   padding: 5vh 9vh 0;
   font-size: 1.2vh;
   font-family: 'Montserrat', sans-serif;

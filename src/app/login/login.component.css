@@ -14,9 +14,7 @@
   .main__buttons {
     width: 60%;
     display: -webkit-flex;
-    display: flex;
     -webkit-justify-content: space-between;
-    justify-content: space-between;
     margin: 5.42vh auto; }
   .main__button {
     font-family: 'Montserrat', sans-serif;
@@ -62,11 +60,9 @@
 
 .login__buttons {
   display: -webkit-flex;
-  display: flex;
   margin: 0 auto;
   width: 250px;
-  -webkit-justify-content: space-between;
-  justify-content: space-between; }
+  -webkit-justify-content: space-between; }
   .login__buttons button {
     width: 114px; }
     .login__buttons button[data-lang] {
