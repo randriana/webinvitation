@@ -59,11 +59,9 @@
   z-index: 0; }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 5vh 9vh 0;
   font-size: 1.2vh;
@@ -79,7 +77,6 @@
       color: #caa278; }
 
 .paper {
-  -webkit-box-shadow: 0px 0px 10px #979797;
   box-shadow: 0px 0px 10px #979797;
   background-color: #fff;
   max-width: 66vh;
@@ -92,7 +89,6 @@
 .envelope__container {
   position: fixed;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
   .envelope__container--backside {
     bottom: 13vh;
