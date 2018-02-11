@@ -3,6 +3,7 @@
 
 # dependencies
 /node_modules
+/bin/www
 
 # IDEs and editors
 /.idea

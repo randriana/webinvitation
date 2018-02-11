@@ -11,7 +11,8 @@ var FamilySchema = new Schema({
   passcode: {type: String, default: ""},
   answered: {type: Boolean, default: false},
   knownMembers: {type: Boolean, default: true},
-  openedInvite: {type: Boolean, default: false}
+  openedInvite: {type: Boolean, default: false},
+  openedDate: []
 });
 
 module.exports = mongoose.model('Family', FamilySchema);
