@@ -13,7 +13,9 @@
   padding-bottom: 35vh; }
   .main__buttons {
     width: 60%;
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     margin: 5.42vh auto; }
   .main__button {

@@ -3,7 +3,9 @@
     padding-bottom: 35vh;
     &__buttons {
         width: 60%;
+        display: -webkit-flex;
         display: flex;
+        -webkit-justify-content: space-between;
         justify-content: space-between;
         margin: $px--50 auto;
     }
