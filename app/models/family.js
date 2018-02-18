@@ -5,6 +5,7 @@ var Schema = mongoose.Schema;
  * User schema
  */
 
+/* Remember to add data to app/models/family.ts as well */
 var FamilySchema = new Schema({
   name: {type: String, default: ""},
   members: [],
