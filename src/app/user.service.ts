@@ -17,8 +17,8 @@ export class UserService {
   public loggedInUser: Family;
   public redirectUrl: string;
 
-  //private url = 'http://46.101.120.12/families/';
-  private url = 'http://localhost:3000/families/';
+  private url = 'http://46.101.120.12/families/';
+  //private url = 'http://localhost:3000/families/';
 
   constructor(private http: HttpClient) {
   }
