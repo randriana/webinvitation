@@ -64,7 +64,6 @@ router.post('/post', function(req, res, next) {
 
 function _setVisited(fam) {
   fam.openedInvite = true;
-  fam.openedDate.push(new Date(Date.now()));
   fam.save(function(err, updatedFam){
 
   });

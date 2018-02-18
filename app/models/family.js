@@ -13,7 +13,6 @@ var FamilySchema = new Schema({
   answered: {type: Boolean, default: false},
   knownMembers: {type: Boolean, default: true},
   openedInvite: {type: Boolean, default: false},
-  openedDate: []
 });
 
 module.exports = mongoose.model('Family', FamilySchema);

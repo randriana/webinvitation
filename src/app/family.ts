@@ -4,7 +4,6 @@ export class Family {
         public answered: boolean,
         public passcode: string,
         public members: Member[],
-        public openedDate: Date[],
         public knownMembers: boolean
     ) { }
 }
