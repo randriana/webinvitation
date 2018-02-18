@@ -27,7 +27,8 @@ router.get('/all', function(req, res, next) {
   var data = {
     numberOfAttendies: 0,
     openedInvitations: 0,
-    answeredRsvp: 0
+    answeredRsvp: 0,
+    numberOfGuests: 0
   }
   Family.find({}, function (err, families) {
     if(err) {
@@ -41,6 +42,7 @@ router.get('/all', function(req, res, next) {
           data.answeredRsvp++;
         }
         for(var j = 0; j < families[i].members.length; j++) {
+          data.numberOfGuests++;
           if(families[i].members[j].attending) {
             data.numberOfAttendies++;
           }
