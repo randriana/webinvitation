@@ -28,13 +28,15 @@ router.get('/all', function(req, res, next) {
     numberOfAttendies: 0,
     openedInvitations: 0,
     answeredRsvp: 0,
-    numberOfGuests: 0
+    numberOfGuests: 0,
+    numberOfInvites: 0
   }
   Family.find({}, function (err, families) {
     if(err) {
       data.error = 1;
     } else {
       for(var i = 0; i < families.length; i++) {
+        data.numberOfInvites++;
         if(families[i].openedInvite) {
           data.openedInvitations++;
         }
