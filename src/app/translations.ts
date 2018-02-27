@@ -46,7 +46,7 @@ export const TRANSLATIONS = {
     },
     'HOME_ADDRESS_TEXT': {
         'NO': 'I SANDVIKSKIRKEN',
-        'FR': 'À L\'ÈGLISE DE SANDVIKEN'
+        'FR': 'À L\'ÉGLISE DE SANDVIKEN'
     },
     'HOME_PLACE_TEXT': {
         'NO': 'BERGEN, NORGE',
@@ -74,7 +74,7 @@ export const TRANSLATIONS = {
     },
     'MARRIAGE_PLACE': {
         'NO': 'I SANDVIKSKIRKEN',
-        'FR': 'À L’ÉGLISE DE SANDVIKEN'
+        'FR': 'À L\'ÉGLISE DE SANDVIKEN'
     },
     'MARRIAGE_PARTY_TEXT': {
         'NO': 'FESTEN FORTSETTER',
