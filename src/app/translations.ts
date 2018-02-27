@@ -42,7 +42,7 @@ export const TRANSLATIONS = {
     },
     'HOME_TIME_TEXT': {
         'NO': 'KLOKKEN FJORTEN',
-        'FR': 'À QUATORZE HEURE'
+        'FR': 'À QUATORZE HEURES'
     },
     'HOME_ADDRESS_TEXT': {
         'NO': 'I SANDVIKSKIRKEN',
