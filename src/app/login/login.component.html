@@ -1,16 +1,16 @@
 <div class="login-container">
   <div class="login__content">
+    <img src="assets/logo.png" alt="" class="logo">
+    <div class="login__buttons">
+      <button class="login__button" data-lang="FR" [class.active]="languageService.activeLanguage === 'FR'" (click)="setLanguage($event)">Français</button>
+      <button class="login__button" data-lang="NO" [class.active]="languageService.activeLanguage === 'NO'" (click)="setLanguage($event)">Norsk</button>
+    </div>
       <form class="form" (ngSubmit)="login()" #loginForm="ngForm">
-          <img src="assets/logo.png" alt="" class="logo">
           <div class="form__content">
-              <p><input class="login__input"type="text" placeholder="{{this.languageService.translations.LOGIN_INPUT_PLACEHOLDER[this.languageService.activeLanguage]}}" [(ngModel)]="passcode" name="passcode"></p>  
+              <p><input class="login__input"type="text" placeholder="{{this.languageService.translations.LOGIN_INPUT_PLACEHOLDER[this.languageService.activeLanguage]}}" [(ngModel)]="passcode" name="passcode"></p>
               <button class="login__button" type="submit">{{ this.languageService.translations.LOGIN_BUTTON_TEXT[this.languageService.activeLanguage] }}</button>
               <p class="error-code">{{ error }}</p>
           </div>
         </form>
-        <div class="login__buttons">
-          <button class="login__button" data-lang="FR" [class.active]="languageService.activeLanguage === 'FR'" (click)="setLanguage($event)">Français</button>
-          <button class="login__button" data-lang="NO" [class.active]="languageService.activeLanguage === 'NO'" (click)="setLanguage($event)">Norsk</button>
-        </div>
   </div>
 </div>

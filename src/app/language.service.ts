@@ -7,8 +7,8 @@ export class LanguageService {
   private _activeLanguage: string;
   public translations = TRANSLATIONS;
 
-  constructor() { 
-    this._activeLanguage = 'NO';
+  constructor() {
+    this._activeLanguage = 'FR';
   }
 
   get activeLanguage(): string {
