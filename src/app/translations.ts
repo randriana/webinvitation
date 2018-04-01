@@ -107,8 +107,8 @@ export const TRANSLATIONS = {
         'FR': 'MERCI DE CONFIRMER VOTRE PRÉSENCE'
     },
     'RSVP_ANSWER_DATE': {
-        'NO': 'INNEN 31. MARS 2018',
-        'FR': 'AVANT LE 31 MARS 2018'
+        'NO': 'INNEN 30. APRIL 2018',
+        'FR': 'AVANT LE 30 AVRIL 2018'
     },
     'RSVP_ACCEPT': {
         'NO': 'SKAL KOMME',
